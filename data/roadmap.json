@@ -1,0 +1,1004 @@
+{
+  "modulos": [
+    {
+      "idModulo": "M01",
+      "numeroModulo": 1,
+      "tituloModulo": "Fundamentos de Eletricidade",
+      "descricaoModulo": "Corrente, tensão, potência, circuitos série/paralelo e medições práticas.",
+      "materias": [
+        {
+          "idMateria": "M01-1",
+          "numeroMateria": 1,
+          "tituloMateria": "Conceitos de Eletricidade",
+          "aulas": [
+            {
+              "idAula": "M01-1-1",
+              "numeroAula": 1,
+              "tituloAula": "O que é elétron",
+              "descricao": "Entenda o que é um elétron e sua importância na eletricidade.",
+              "descricaoManual": "<strong>Ideia-chave:</strong> O elétron é a partícula fundamental que gera a eletricidade. Entenda sua estrutura e comportamento.",
+              "recursosPrincipais": [
+                { "idRecurso": "ELETRON", "tipo": "video", "url": "https://www.youtube.com/embed/j999y3Vt6aY", "titulo": "O que é elétron" }
+              ],
+              "recursosSecundarios": [
+                { "tipo": "video", "titulo": "Corrente Elétrica - Mundo da Elétrica", "url": "https://www.youtube.com/watch?v=kGW4vsHJBN0" }
+              ]
+            },
+            {
+              "idAula": "M01-1-2",
+              "numeroAula": 2,
+              "tituloAula": "Movimento do elétron",
+              "descricao": "Como os elétrons se movimentam e geram corrente elétrica.",
+              "descricaoManual": "Entenda como o movimento dos elétrons cria o fluxo de corrente em um circuito fechado.",
+              "recursosPrincipais": [
+                { "idRecurso": "MOVIMENTO", "tipo": "video", "url": "https://www.youtube.com/embed/PVEQs-h8BNs", "titulo": "Movimento do elétron" }
+              ],
+              "recursosSecundarios": [
+                { "tipo": "video", "titulo": "Lei de Ohm — Eletrônica Básica", "url": "https://www.youtube.com/watch?v=Dx8glwnHw9Q" }
+              ]
+            },
+            {
+              "idAula": "M01-1-3",
+              "numeroAula": 3,
+              "tituloAula": "Corrente, tensão e resistência",
+              "descricao": "Os três conceitos fundamentais da eletricidade.",
+              "descricaoManual": "<strong>Corrente</strong> (A) = fluxo de elétrons. <strong>Tensão</strong> (V) = pressão elétrica. <strong>Resistência</strong> (Ω) = oposição ao fluxo.",
+              "recursosPrincipais": [
+                { "idRecurso": "CTR", "tipo": "video", "url": "https://www.youtube.com/embed/yXvvV8EmvEU", "titulo": "Corrente, tensão e resistência" }
+              ],
+              "recursosSecundarios": [
+                { "tipo": "video", "titulo": "Potência Elétrica e Energia", "url": "https://www.youtube.com/watch?v=fonXiK50QFw" }
+              ]
+            },
+            {
+              "idAula": "M01-1-4",
+              "numeroAula": 4,
+              "tituloAula": "1ª Lei de Ohm",
+              "descricao": "A relação fundamental: V = R × I",
+              "descricaoManual": "<strong>V = R × I</strong> - Tensão é igual à resistência multiplicada pela corrente. Base para todos os cálculos.",
+              "recursosPrincipais": [
+                { "idRecurso": "OHM1", "tipo": "video", "url": "https://www.youtube.com/embed/xJUmrpSDubk", "titulo": "1ª Lei de Ohm" }
+              ],
+              "recursosSecundarios": [
+                { "tipo": "video", "titulo": "Lei de Ohm — Eletrônica Básica", "url": "https://www.youtube.com/watch?v=Dx8glwnHw9Q" }
+              ]
+            },
+            {
+              "idAula": "M01-1-5",
+              "numeroAula": 5,
+              "tituloAula": "2ª Lei de Ohm",
+              "descricao": "Resistência em função das dimensões do condutor.",
+              "descricaoManual": "<strong>R = ρ × L / A</strong> - A resistência depende do material (ρ), comprimento (L) e área (A).",
+              "recursosPrincipais": [
+                { "idRecurso": "OHM2", "tipo": "video", "url": "https://www.youtube.com/embed/DM5O5lrtG1c", "titulo": "2ª Lei de Ohm" }
+              ],
+              "recursosSecundarios": [
+                { "tipo": "video", "titulo": "Lei de Ohm na prática", "url": "https://www.youtube.com/watch?v=i3Jc_wVFsQ8" }
+              ]
+            },
+            {
+              "idAula": "M01-1-6",
+              "numeroAula": 6,
+              "tituloAula": "Unidades de medida",
+              "descricao": "Unidades elétricas: Ampere, Volt, Ohm, Watt e suas conversões.",
+              "descricaoManual": "<strong>A</strong> (Ampere) = corrente. <strong>V</strong> (Volt) = tensão. <strong>Ω</strong> (Ohm) = resistência. <strong>W</strong> (Watt) = potência.",
+              "recursosPrincipais": [
+                { "idRecurso": "UNIDADES", "tipo": "video", "url": "https://www.youtube.com/embed/vjApv4GSIpw", "titulo": "Unidades de medida" }
+              ],
+              "recursosSecundarios": [
+                { "tipo": "video", "titulo": "Grandezas Elétricas", "url": "https://www.youtube.com/watch?v=i3Jc_wVFsQ8" }
+              ]
+            },
+            {
+              "idAula": "M01-1-7",
+              "numeroAula": 7,
+              "tituloAula": "Potência Elétrica (Watts)",
+              "descricao": "Entenda potência elétrica e como calcular o consumo.",
+              "descricaoManual": "<strong>P = V × I</strong> - Potência em Watts. Quanto maior a potência, maior o consumo de energia.",
+              "recursosPrincipais": [
+                { "idRecurso": "POTENCIA_WATTS", "tipo": "video", "url": "https://www.youtube.com/embed/X2GInZVVwQQ", "titulo": "Potência Elétrica Watts" }
+              ],
+              "recursosSecundarios": [
+                { "tipo": "video", "titulo": "Potência Elétrica e Energia", "url": "https://www.youtube.com/watch?v=fonXiK50QFw" }
+              ]
+            }
+          ]
+        },
+        {
+          "idMateria": "M01-2",
+          "numeroMateria": 2,
+          "tituloMateria": "Componentes Eletrônicos",
+          "aulas": [
+            {
+              "idAula": "M01-2-1",
+              "numeroAula": 1,
+              "tituloAula": "Os 18 Componentes Mais Importantes",
+              "descricao": "Conheça os componentes essenciais da eletrônica.",
+              "descricaoManual": "Visão geral dos componentes mais utilizados: resistores, capacitores, diodos, transistores, LEDs e muito mais.",
+              "recursosPrincipais": [
+                { "idRecurso": "COMPONENTES", "tipo": "video", "url": "https://www.youtube.com/embed/a-l4tGfis0Q", "titulo": "Os 18 Componentes Eletrônicos Mais Importantes" }
+              ],
+              "recursosSecundarios": [
+                { "tipo": "video", "titulo": "Componentes eletrônicos básicos", "url": "https://www.youtube.com/watch?v=DH2hF0Z9Yns" }
+              ]
+            },
+            {
+              "idAula": "M01-2-2",
+              "numeroAula": 2,
+              "tituloAula": "Como testar os componentes eletrônicos",
+              "descricao": "Aprenda a testar componentes com multímetro.",
+              "descricaoManual": "Técnicas de teste para resistores, capacitores, diodos, transistores e outros componentes usando multímetro.",
+              "recursosPrincipais": [
+                { "idRecurso": "TESTE_COMP", "tipo": "video", "url": "https://www.youtube.com/embed/qgzzU2021XU", "titulo": "Como testar os componentes eletrônicos" }
+              ],
+              "recursosSecundarios": [
+                { "tipo": "video", "titulo": "Testando componentes na prática", "url": "https://www.youtube.com/watch?v=fonXiK50QFw" }
+              ]
+            },
+            {
+              "idAula": "M01-2-3",
+              "numeroAula": 3,
+              "tituloAula": "Como funcionam os transformadores",
+              "descricao": "Entenda o funcionamento dos transformadores elétricos.",
+              "descricaoManual": "Transformadores convertem tensão AC usando indução eletromagnética. Relação de espiras define tensão de saída.",
+              "recursosPrincipais": [
+                { "idRecurso": "TRANSFORMADOR", "tipo": "video", "url": "https://www.youtube.com/embed/awv3ewkYC9E", "titulo": "Como funcionam os transformadores" }
+              ],
+              "recursosSecundarios": [
+                { "tipo": "video", "titulo": "Transformadores na prática", "url": "https://www.youtube.com/watch?v=DH2hF0Z9Yns" }
+              ]
+            }
+          ]
+        },
+        {
+          "idMateria": "M01-3",
+          "numeroMateria": 3,
+          "tituloMateria": "Modelo mental & medições",
+          "aulas": [
+            {
+              "idAula": "M01-3-1",
+              "numeroAula": 1,
+              "tituloAula": "Circuito fechado x aberto",
+              "descricao": "Por que retorno importa.",
+              "descricaoManual": "<strong>Sem caminho de volta</strong> não há corrente.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": [
+                { "tipo": "video", "titulo": "Circuito fechado vs aberto (na prática)", "url": "https://www.youtube.com/watch?v=xTEZRquXgSI" }
+              ]
+            },
+            {
+              "idAula": "M01-3-2",
+              "numeroAula": 2,
+              "tituloAula": "Referência (terra) e diferença de potencial",
+              "descricao": "O que é ‘terra’.",
+              "descricaoManual": "‘Terra’ é referência; evite laços de ground.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": [
+                { "tipo": "video", "titulo": "O que é Terra/Ground?", "url": "https://www.youtube.com/watch?v=sxxFW396sl8" }
+              ]
+            },
+            {
+              "idAula": "M01-3-3",
+              "numeroAula": 3,
+              "tituloAula": "Caminho da corrente: nós, ramos e malhas",
+              "descricao": "Visualizando trajetos.",
+              "descricaoManual": "Pense em malhas fechadas; corrente prefere menor impedância efetiva.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": [
+                { "tipo": "video", "titulo": "Nós, ramos e malhas — visão prática", "url": "https://www.youtube.com/watch?v=FKu8GS6Sc0I" }
+              ]
+            },
+            {
+              "idAula": "M01-3-4",
+              "numeroAula": 4,
+              "tituloAula": "Medições sem engano (multímetro)",
+              "descricao": "Como medir certo.",
+              "descricaoManual": "Volts: paralelo. Corrente: série (atenção ao borne). Resistência: sem tensão.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": [
+                { "tipo": "video", "titulo": "Como usar o Multímetro", "url": "https://www.youtube.com/watch?v=u4W93w8FxJQ" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "idModulo": "M02",
+      "numeroModulo": 2,
+      "tituloModulo": "Fontes AC-DC e Retificação",
+      "descricaoModulo": "Diodos, ponte retificadora, capacitores de filtro, ripple e proteções.",
+      "materias": [
+        {
+          "idMateria": "M02-1",
+          "numeroMateria": 1,
+          "tituloMateria": "Diodos e Ponte Retificadora",
+          "aulas": [
+            {
+              "idAula": "M02-1-1",
+              "numeroAula": 1,
+              "tituloAula": "Diodo ideal vs real; teste",
+              "descricao": "Teste e polaridade.",
+              "descricaoManual": "Função diodo no multímetro: conduz num sentido; bloqueia no outro.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": [
+                { "tipo": "video", "titulo": "Testando diodo com multímetro", "url": "https://www.youtube.com/watch?v=E6DRQYOKl5M" }
+              ]
+            },
+            {
+              "idAula": "M02-1-2",
+              "numeroAula": 2,
+              "tituloAula": "Ponte (meia onda x onda completa)",
+              "descricao": "Conceito e montagem.",
+              "descricaoManual": "Quatro diodos formando retificador de onda completa.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": [
+                { "tipo": "video", "titulo": "Ponte de diodos (conceito)", "url": "https://www.youtube.com/watch?v=SdXzFCqidCk" }
+              ]
+            },
+            {
+              "idAula": "M02-1-3",
+              "numeroAula": 3,
+              "tituloAula": "Queda total e dissipação; seleção",
+              "descricao": "Escolha do diodo.",
+              "descricaoManual": "Queda ~1,4 V em ponte; verifique If, Vr e dissipação.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": [
+                { "tipo": "video", "titulo": "Retificador: ponte vs tape-center", "url": "https://www.youtube.com/watch?v=Giz8xhXzdcw" }
+              ]
+            }
+          ]
+        },
+        {
+          "idMateria": "M02-2",
+          "numeroMateria": 2,
+          "tituloMateria": "Filtragem Capacitiva e Ripple",
+          "aulas": [
+            {
+              "idAula": "M02-2-1",
+              "numeroAula": 1,
+              "tituloAula": "Dimensionamento do capacitor de filtro",
+              "descricao": "Cálculo de ripple.",
+              "descricaoManual": "ΔV ≈ I/(2·f·C) para onda completa.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": [
+                { "tipo": "video", "titulo": "Capacitor de filtro — prática", "url": "https://www.youtube.com/watch?v=Ok9kDEbpUYI" }
+              ]
+            },
+            {
+              "idAula": "M02-2-2",
+              "numeroAula": 2,
+              "tituloAula": "Medindo ripple (scope/multímetro)",
+              "descricao": "Técnicas de medição.",
+              "descricaoManual": "Use AC+DC no osciloscópio; atenção a leituras subestimadas no multímetro.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": [
+                { "tipo": "video", "titulo": "Fator de ripple no osciloscópio", "url": "https://www.youtube.com/watch?v=JumUIf3lopw" }
+              ]
+            },
+            {
+              "idAula": "M02-2-3",
+              "numeroAula": 3,
+              "tituloAula": "Efeito do C na forma de onda",
+              "descricao": "Serra (ripple).",
+              "descricaoManual": "Mais C ⇒ menos ripple, mas maior surto de carga.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": [
+                { "tipo": "video", "titulo": "Filtro capacitivo em retificadores", "url": "https://www.youtube.com/watch?v=GYvQGHaH790" }
+              ]
+            }
+          ]
+        },
+        {
+          "idMateria": "M02-3",
+          "numeroMateria": 3,
+          "tituloMateria": "Proteções e Segurança",
+          "aulas": [
+            {
+              "idAula": "M02-3-1",
+              "numeroAula": 1,
+              "tituloAula": "Fusível, NTC (inrush) e bleeder",
+              "descricao": "Proteções básicas.",
+              "descricaoManual": "Fusível abre em falha; NTC limita surto; bleeder descarrega.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": [
+                { "tipo": "video", "titulo": "PTC vs NTC — como usar", "url": "https://www.youtube.com/watch?v=8EIM3fvvhAk" }
+              ]
+            },
+            {
+              "idAula": "M02-3-2",
+              "numeroAula": 2,
+              "tituloAula": "Descarga segura de capacitores",
+              "descricao": "Procedimento.",
+              "descricaoManual": "Use resistor apropriado; confirme tensão remanescente.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": [
+                { "tipo": "video", "titulo": "Como descarregar capacitor", "url": "https://www.youtube.com/watch?v=33Q-opoyVsQ" }
+              ]
+            },
+            {
+              "idAula": "M02-3-3",
+              "numeroAula": 3,
+              "tituloAula": "Layout prático e ruído (loops)",
+              "descricao": "Boas práticas.",
+              "descricaoManual": "Reduza área de loop; torça pares; trilhas curtas e grossas.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": [
+                { "tipo": "video", "titulo": "Fusível térmico & boas práticas", "url": "https://www.youtube.com/watch?v=FrN92RBh-fc" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "idModulo": "M05",
+      "numeroModulo": 5,
+      "tituloModulo": "Instrumentos de Bancada",
+      "descricaoModulo": "Multímetro, fonte, osciloscópio e sondas — uso correto e segurança.",
+      "materias": [
+        {
+          "idMateria": "M05-1",
+          "numeroMateria": 1,
+          "tituloMateria": "Multímetro e Fonte",
+          "aulas": [
+            {
+              "idAula": "M05-1-1",
+              "numeroAula": 1,
+              "tituloAula": "Medições sem erro: volts/amps/ohms",
+              "descricao": "Erros comuns e como evitá-los.",
+              "descricaoManual": "Checklist: borne certo, série/paralelo, burden voltage.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": []
+            }
+          ]
+        },
+        {
+          "idMateria": "M05-2",
+          "numeroMateria": 2,
+          "tituloMateria": "Osciloscópio e Sondas",
+          "aulas": [
+            {
+              "idAula": "M05-2-1",
+              "numeroAula": 1,
+              "tituloAula": "Sondas 1x/10x, aterramento e laço",
+              "descricao": "Como evitar ruído e leituras erradas.",
+              "descricaoManual": "Hook ground curto, compensação e AC+DC.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": []
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "idModulo": "M06",
+      "numeroModulo": 6,
+      "tituloModulo": "Soldagem e Diagnóstico",
+      "descricaoModulo": "Técnicas de solda THT/SMD, retrabalho e fluxo de diagnóstico.",
+      "materias": [
+        {
+          "idMateria": "M06-1",
+          "numeroMateria": 1,
+          "tituloMateria": "Solda e Retrabalho",
+          "aulas": [
+            {
+              "idAula": "M06-1-1",
+              "numeroAula": 1,
+              "tituloAula": "Solda limpa e confiável",
+              "descricao": "Estanho, fluxo, temperatura, ponte térmica.",
+              "descricaoManual": "Checklist IPC-like para juntas brilhantes e sem trinca.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": []
+            }
+          ]
+        },
+        {
+          "idMateria": "M06-2",
+          "numeroMateria": 2,
+          "tituloMateria": "Diagnóstico Guiado",
+          "aulas": [
+            {
+              "idAula": "M06-2-1",
+              "numeroAula": 1,
+              "tituloAula": "Do defeito ao componente",
+              "descricao": "Triagem, inspeção, medições e hipótese.",
+              "descricaoManual": "Fluxo: sintoma → alimentação → sinais → componente.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": []
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "idModulo": "M07",
+      "numeroModulo": 7,
+      "tituloModulo": "Conversores DC-DC",
+      "descricaoModulo": "Buck, Boost, indutores, cálculo de L/C e controle PWM.",
+      "materias": [
+        {
+          "idMateria": "M07-1",
+          "numeroMateria": 1,
+          "tituloMateria": "Topologias CC-CC (não isoladas)",
+          "aulas": [
+            {
+              "idAula": "M07-1-1",
+              "numeroAula": 1,
+              "tituloAula": "Buck, Boost e Buck-Boost — visão geral",
+              "descricao": "Fluxo de energia, chave, diodo e filtro LC.",
+              "descricaoManual": "D≈Vout/Vin (buck ideal); Boost: Vout≈Vin/(1−D). Atenção a limites de duty e perdas.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": []
+            },
+            {
+              "idAula": "M07-1-2",
+              "numeroAula": 2,
+              "tituloAula": "Modos CCM x DCM e ripple",
+              "descricao": "Diferenças práticas, cálculo do ∆IL/∆Vout.",
+              "descricaoManual": "Defina L para manter CCM no pior caso de carga/tensão; cheque ripple de corrente e tensão.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": []
+            }
+          ]
+        },
+        {
+          "idMateria": "M07-2",
+          "numeroMateria": 2,
+          "tituloMateria": "Magnetismo prático (L e trafo)",
+          "aulas": [
+            {
+              "idAula": "M07-2-1",
+              "numeroAula": 1,
+              "tituloAula": "Indutores: núcleo, Bsat, AL e perdas",
+              "descricao": "Escolha de núcleo/fio e cálculo de L.",
+              "descricaoManual": "Selecione núcleo (ferrite), ∆IL alvo (20–40% Iout), verifique Bsat e aquecimento.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": []
+            },
+            {
+              "idAula": "M07-2-2",
+              "numeroAula": 2,
+              "tituloAula": "Transformadores para chaveamento (overview)",
+              "descricao": "Regras de segurança e isolamento.",
+              "descricaoManual": "Clearances/creepage, janela, relação de espiras e perdas por histerese/correntes parasitas.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": []
+            }
+          ]
+        },
+        {
+          "idMateria": "M07-3",
+          "numeroMateria": 3,
+          "tituloMateria": "Controle e PWM",
+          "aulas": [
+            {
+              "idAula": "M07-3-1",
+              "numeroAula": 1,
+              "tituloAula": "Controle em malha (aberta/fechada) e PWM",
+              "descricao": "Referência, erro, compensação e estabilidade.",
+              "descricaoManual": "Noções de TL431/optocoplador, compensação tipo II/III, soft-start e proteções.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": []
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "idModulo": "M08",
+      "numeroModulo": 8,
+      "tituloModulo": "Fontes Chaveadas e Inversores",
+      "descricaoModulo": "Flyback, meia-ponte, inversores DC-AC, isolamento e EMI.",
+      "materias": [
+        {
+          "idMateria": "M08-1",
+          "numeroMateria": 1,
+          "tituloMateria": "Topologias isoladas",
+          "aulas": [
+            {
+              "idAula": "M08-1-1",
+              "numeroAula": 1,
+              "tituloAula": "Flyback prático (universal input)",
+              "descricao": "Projeto de trafo, gap e clamp/snubber.",
+              "descricaoManual": "Dimensione trafo p/ potência, escolha clamp RCD ou ativo, e valide picos de drain.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": []
+            },
+            {
+              "idAula": "M08-1-2",
+              "numeroAula": 2,
+              "tituloAula": "Forward/Meia-ponte — quando usar",
+              "descricao": "Melhor eficiência em potências maiores.",
+              "descricaoManual": "Core reset no forward; balanceamento de capacitores na meia-ponte.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": []
+            }
+          ]
+        },
+        {
+          "idMateria": "M08-2",
+          "numeroMateria": 2,
+          "tituloMateria": "Inversores DC-AC",
+          "aulas": [
+            {
+              "idAula": "M08-2-1",
+              "numeroAula": 1,
+              "tituloAula": "H-bridge, SPWM e filtro LC",
+              "descricao": "Arquitetura de inversor senoidal.",
+              "descricaoManual": "SPWM, dead-time, dimensionamento de LC de saída e THD básico.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": []
+            }
+          ]
+        },
+        {
+          "idMateria": "M08-3",
+          "numeroMateria": 3,
+          "tituloMateria": "EMI, snubbers e layout",
+          "aulas": [
+            {
+              "idAula": "M08-3-1",
+              "numeroAula": 1,
+              "tituloAula": "Loops, dv/dt, di/dt e filtros",
+              "descricao": "Como reduzir ruído e passar em EMC.",
+              "descricaoManual": "Minimize área de loop, snubber RC, RC-damper em trafo, Y-caps, e plano de massa bem pensado.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": []
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "idModulo": "M09",
+      "numeroModulo": 9,
+      "tituloModulo": "Elétrica Automotiva Básica",
+      "descricaoModulo": "Bateria, alternador, proteções, aterramento e medições.",
+      "materias": [
+        {
+          "idMateria": "M09-1",
+          "numeroMateria": 1,
+          "tituloMateria": "Distribuição e proteção",
+          "aulas": [
+            {
+              "idAula": "M09-1-1",
+              "numeroAula": 1,
+              "tituloAula": "Bateria, partida, alternador e fusíveis",
+              "descricao": "Fluxo de energia e dimensionamento de proteção.",
+              "descricaoManual": "Curvas de fusível/termofusível, relés, e cálculo de queda de tensão em chicote.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": []
+            },
+            {
+              "idAula": "M09-1-2",
+              "numeroAula": 2,
+              "tituloAula": "Aterramento e ruído em automotivo",
+              "descricao": "Laços de terra, transientes e mitigação.",
+              "descricaoManual": "ISO pulse/transientes, supressores (TVS), filtros e star-ground.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": []
+            }
+          ]
+        },
+        {
+          "idMateria": "M09-2",
+          "numeroMateria": 2,
+          "tituloMateria": "Medições seguras no carro",
+          "aulas": [
+            {
+              "idAula": "M09-2-1",
+              "numeroAula": 1,
+              "tituloAula": "Multímetro/oscilo: onde e como medir",
+              "descricao": "Técnicas para evitar leituras falsas e danos.",
+              "descricaoManual": "Medições com motor ligado, ripple de alternador, e sondagem correta em conectores.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": []
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "idModulo": "M10",
+      "numeroModulo": 10,
+      "tituloModulo": "Diagnóstico Automotivo",
+      "descricaoModulo": "Sensores, atuadores, ECU, OBD-II e protocolos CAN.",
+      "materias": [
+        {
+          "idMateria": "M10-1",
+          "numeroMateria": 1,
+          "tituloMateria": "Sensores e atuadores",
+          "aulas": [
+            {
+              "idAula": "M10-1-1",
+              "numeroAula": 1,
+              "tituloAula": "MAP/MAF, sonda O₂, TPS e injetores",
+              "descricao": "Assinaturas elétricas e sintomas típicos.",
+              "descricaoManual": "Leituras esperadas, falhas comuns e testes práticos de continuidade/drive.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": []
+            },
+            {
+              "idAula": "M10-1-2",
+              "numeroAula": 2,
+              "tituloAula": "Ignição e bobinas",
+              "descricao": "Primário/secundário e diagnóstico básico.",
+              "descricaoManual": "Formas de onda típicas, dwell e falhas sob carga.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": []
+            }
+          ]
+        },
+        {
+          "idMateria": "M10-2",
+          "numeroMateria": 2,
+          "tituloMateria": "Protocolos e diagnóstico",
+          "aulas": [
+            {
+              "idAula": "M10-2-1",
+              "numeroAula": 1,
+              "tituloAula": "OBD-II, K-Line e CAN — leitura de DTC",
+              "descricao": "Fluxo de diagnóstico orientado por código de falha.",
+              "descricaoManual": "Interpretação de DTC genéricos x específicos, freeze-frame e teste por substituição controlada.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": []
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "idModulo": "M11",
+      "numeroModulo": 11,
+      "tituloModulo": "Hardware de Smartphones",
+      "descricaoModulo": "SoC, RAM, Flash, PMU, display, ferramentas e schematic.",
+      "materias": [
+        {
+          "idMateria": "M11-1",
+          "numeroMateria": 1,
+          "tituloMateria": "Arquitetura e Componentes Principais",
+          "aulas": [
+            {
+              "idAula": "M11-1-1",
+              "numeroAula": 1,
+              "tituloAula": "Visão geral: SoC, RAM, Flash e PMU",
+              "descricao": "Como funciona um smartphone por dentro.",
+              "descricaoManual": "<strong>SoC</strong> (System on Chip) integra CPU, GPU, modem. <strong>RAM</strong> armazena dados temporários. <strong>Flash</strong> é a memória permanente. <strong>PMU</strong> (Power Management Unit) gerencia tensões.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": [
+                { "tipo": "video", "titulo": "Como funciona um smartphone por dentro", "url": "https://www.youtube.com/watch?v=NfkXsXR3RTE" }
+              ]
+            },
+            {
+              "idAula": "M11-1-2",
+              "numeroAula": 2,
+              "tituloAula": "Sistema de alimentação: bateria, carregamento e PMU",
+              "descricao": "Fluxo de energia no smartphone.",
+              "descricaoManual": "Bateria Li-ion/Li-Po → circuito de carga (IC de carregamento) → PMU distribui tensões (1.8V, 2.8V, etc) para componentes.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": [
+                { "tipo": "video", "titulo": "Como funciona o carregamento de celular", "url": "https://www.youtube.com/watch?v=XKJWE6r3Xzk" }
+              ]
+            },
+            {
+              "idAula": "M11-1-3",
+              "numeroAula": 3,
+              "tituloAula": "Display: tipos (LCD/AMOLED) e conexões",
+              "descricao": "Tecnologias de tela e suas diferenças.",
+              "descricaoManual": "<strong>LCD</strong> precisa backlight. <strong>AMOLED</strong> pixels emitem luz própria. Conexão via FPC (flat cable) com sinais MIPI DSI.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": [
+                { "tipo": "video", "titulo": "LCD vs AMOLED - Diferenças", "url": "https://www.youtube.com/watch?v=gfQdY8ch7wg" }
+              ]
+            }
+          ]
+        },
+        {
+          "idMateria": "M11-2",
+          "numeroMateria": 2,
+          "tituloMateria": "Diagnóstico Visual e Ferramentas",
+          "aulas": [
+            {
+              "idAula": "M11-2-1",
+              "numeroAula": 1,
+              "tituloAula": "Inspeção visual: oxidação, componentes queimados, trilhas",
+              "descricao": "O que procurar ao abrir um smartphone.",
+              "descricaoManual": "Use lupa/microscópio. Procure: manchas escuras (curto), oxidação (água), componentes levantados, trilhas rompidas.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": [
+                { "tipo": "video", "titulo": "Como fazer diagnóstico visual em placa", "url": "https://www.youtube.com/watch?v=zJp_7eJmUzs" }
+              ]
+            },
+            {
+              "idAula": "M11-2-2",
+              "numeroAula": 2,
+              "tituloAula": "Ferramentas essenciais: multímetro, fonte, microscópio",
+              "descricao": "Kit básico para manutenção de smartphones.",
+              "descricaoManual": "Multímetro (medição), fonte ajustável (teste de consumo), microscópio/lupa, estação de solda (ar quente + ferro), pinças ESD.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": [
+                { "tipo": "video", "titulo": "Ferramentas para consertar celular", "url": "https://www.youtube.com/watch?v=kCL8qJVqKd4" }
+              ]
+            },
+            {
+              "idAula": "M11-2-3",
+              "numeroAula": 3,
+              "tituloAula": "Medições básicas: continuidade, resistência e tensão",
+              "descricao": "Como usar multímetro em smartphones.",
+              "descricaoManual": "Continuidade: testar trilhas/conectores. Resistência: verificar curtos (< 10Ω suspeito). Tensão: confirmar saídas do PMU.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": [
+                { "tipo": "video", "titulo": "Como medir placa de celular", "url": "https://www.youtube.com/watch?v=8VN9RjhT8D0" }
+              ]
+            }
+          ]
+        },
+        {
+          "idMateria": "M11-3",
+          "numeroMateria": 3,
+          "tituloMateria": "Schematic e Boardview",
+          "aulas": [
+            {
+              "idAula": "M11-3-1",
+              "numeroAula": 1,
+              "tituloAula": "Lendo esquemáticos (schematic) de smartphones",
+              "descricao": "Como interpretar diagramas eletrônicos.",
+              "descricaoManual": "Schematic mostra conexões lógicas. Identifique blocos: power, audio, display, RF. Use para rastrear sinais.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": [
+                { "tipo": "video", "titulo": "Como ler esquema elétrico de celular", "url": "https://www.youtube.com/watch?v=H1bDHm0XL8Y" }
+              ]
+            },
+            {
+              "idAula": "M11-3-2",
+              "numeroAula": 2,
+              "tituloAula": "Usando Boardview para localizar componentes",
+              "descricao": "Ferramenta essencial para reparos.",
+              "descricaoManual": "Boardview = mapa da placa física. Mostra posição de cada componente, valores, conexões. Software recomendado: ZXWTools, OpenBoardView.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": [
+                { "tipo": "video", "titulo": "Como usar Boardview", "url": "https://www.youtube.com/watch?v=3qjGYrx3kfY" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "idModulo": "M12",
+      "numeroModulo": 12,
+      "tituloModulo": "Reparo de Smartphones",
+      "descricaoModulo": "Defeitos comuns, soldagem SMD, reballing e jumpers.",
+      "materias": [
+        {
+          "idMateria": "M12-1",
+          "numeroMateria": 1,
+          "tituloMateria": "Defeitos Comuns e Diagnóstico",
+          "aulas": [
+            {
+              "idAula": "M12-1-1",
+              "numeroAula": 1,
+              "tituloAula": "Não liga / Não carrega — fluxo de diagnóstico",
+              "descricao": "Checklist passo a passo.",
+              "descricaoManual": "1. Teste bateria (voltímetro). 2. Conecte fonte (amperagem alta = curto). 3. Verifique IC de carga. 4. Teste PMU. 5. Verifique CPU/SoC.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": [
+                { "tipo": "video", "titulo": "Celular não liga - Como diagnosticar", "url": "https://www.youtube.com/watch?v=FJ5vR9fzL5c" }
+              ]
+            },
+            {
+              "idAula": "M12-1-2",
+              "numeroAula": 2,
+              "tituloAula": "Tela não acende / Touch não funciona",
+              "descricao": "Display e touchscreen.",
+              "descricaoManual": "Tela: verifique flat cable, conector, backlight (LCD) ou painel (AMOLED). Touch: teste digitalizador, IC de touch, conexões.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": [
+                { "tipo": "video", "titulo": "Como consertar touch que não funciona", "url": "https://www.youtube.com/watch?v=YdP7kOXzLrI" }
+              ]
+            },
+            {
+              "idAula": "M12-1-3",
+              "numeroAula": 3,
+              "tituloAula": "Sem sinal / Wi-Fi não funciona",
+              "descricao": "Problemas de RF e conectividade.",
+              "descricaoManual": "Sinal: antena, conector RF, PA (power amplifier), modem. Wi-Fi: módulo Wi-Fi/BT, antena, IC de RF. Use fonte para detectar consumo anormal.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": [
+                { "tipo": "video", "titulo": "Celular sem sinal - diagnóstico", "url": "https://www.youtube.com/watch?v=NBQbqKUKvHo" }
+              ]
+            },
+            {
+              "idAula": "M12-1-4",
+              "numeroAula": 4,
+              "tituloAula": "Molhou / Oxidação — limpeza e recuperação",
+              "descricao": "Procedimento para aparelhos que tiveram contato com líquidos.",
+              "descricaoManual": "1. Desmonte RÁPIDO. 2. Remova bateria. 3. Ultrassom com álcool isopropílico. 4. Escove componentes oxidados. 5. Aplique flux, resolde componentes suspeitos. 6. Teste por partes.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": [
+                { "tipo": "video", "titulo": "Como recuperar celular que molhou", "url": "https://www.youtube.com/watch?v=vHdZ_qH8tZI" }
+              ]
+            }
+          ]
+        },
+        {
+          "idMateria": "M12-2",
+          "numeroMateria": 2,
+          "tituloMateria": "Técnicas de Reparo SMD",
+          "aulas": [
+            {
+              "idAula": "M12-2-1",
+              "numeroAula": 1,
+              "tituloAula": "Soldagem e dessoldagem de componentes SMD pequenos",
+              "descricao": "Técnica de ferro e ar quente.",
+              "descricaoManual": "SMD pequenos (resistores, capacitores): ferro fino + fluxo. SMD médios (ICs): ar quente 350-380°C, movimento circular, não force remoção.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": [
+                { "tipo": "video", "titulo": "Como soldar SMD em celular", "url": "https://www.youtube.com/watch?v=8XDD68M6TGU" }
+              ]
+            },
+            {
+              "idAula": "M12-2-2",
+              "numeroAula": 2,
+              "tituloAula": "Reballing de ICs (CPU, memória, PMU)",
+              "descricao": "Técnica avançada de troca de BGA.",
+              "descricaoManual": "Remoção: ar quente controlado. Limpeza: remove solda velha (malha). Aplicação de esferas: stencil + pasta. Reflow: temperatura controlada ~240-260°C.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": [
+                { "tipo": "video", "titulo": "Como fazer reballing em celular", "url": "https://www.youtube.com/watch?v=OsNbRCN-_7k" }
+              ]
+            },
+            {
+              "idAula": "M12-2-3",
+              "numeroAula": 3,
+              "tituloAula": "Jumpers e reconstrução de trilhas",
+              "descricao": "Quando trilhas estão rompidas.",
+              "descricaoManual": "Identifique caminho no boardview/schematic. Use fio de cobre fino (0.1mm). Solde com flux e ferro fino. Proteja com cola UV ou verniz.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": [
+                { "tipo": "video", "titulo": "Como fazer jumper em placa de celular", "url": "https://www.youtube.com/watch?v=xY6E0LQJiS4" }
+              ]
+            }
+          ]
+        },
+        {
+          "idMateria": "M12-3",
+          "numeroMateria": 3,
+          "tituloMateria": "Testes e Validação",
+          "aulas": [
+            {
+              "idAula": "M12-3-1",
+              "numeroAula": 1,
+              "tituloAula": "Teste funcional completo após reparo",
+              "descricao": "Checklist de qualidade.",
+              "descricaoManual": "Teste: ligar/desligar, carregamento, display/touch, câmeras (frontal/traseira), áudio (alto-falante/microfone/fone), Wi-Fi/Bluetooth, rede móvel, sensores (giroscópio, proximidade).",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": [
+                { "tipo": "video", "titulo": "Como testar celular após conserto", "url": "https://www.youtube.com/watch?v=bRczLEhEFuQ" }
+              ]
+            },
+            {
+              "idAula": "M12-3-2",
+              "numeroAula": 2,
+              "tituloAula": "Análise de consumo com fonte regulável",
+              "descricao": "Detectar curtos e componentes defeituosos.",
+              "descricaoManual": "Conecte fonte no lugar da bateria. Configure 3.7-4.2V. Amperagem: < 50mA desligado = normal. > 200mA = curto. Use termovisor ou toque para achar componente quente.",
+              "recursosPrincipais": [
+                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+              ],
+              "recursosSecundarios": [
+                { "tipo": "video", "titulo": "Como usar fonte para encontrar curto", "url": "https://www.youtube.com/watch?v=k7rMxR9yqLE" }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<!--
+Copyright (c) 2025 Jose Vitor
+
+Este software é licenciado sob os termos da GNU Affero General Public License v3.0 (AGPL-3.0),
+com a seguinte condição adicional:
+
+⚠️ Uso comercial não autorizado: este código não pode ser utilizado total ou parcialmente 
+em projetos comerciais, produtos pagos ou serviços que gerem receita sem permissão expressa 
+do autor.
+
+Para detalhes completos, consulte o arquivo LICENSE na raiz do projeto.
+-->
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Roadmap Eletrônica — Principal</title>
+  <style>
+    :root { --bg:#0f172a; --card:#0c122d; --muted:#9ca3af; --accent:#22d3ee; --good:#10b981; --warn:#f59e0b; --text:#e5e7eb; --line:#1f2937; }
+    * { box-sizing:border-box }
+    body { margin:0; font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial; background:radial-gradient(1000px 600px at 10% -10%, #10204b33, transparent), linear-gradient(180deg,#060a1b 0%, #0b1028 100%); color:var(--text); }
+    header { padding:16px 20px; border-bottom:1px solid var(--line); position:sticky; top:0; background:#0b1028d9; backdrop-filter: blur(6px); display:flex; gap:16px; align-items:center; justify-content:space-between; z-index:5; }
+    .brand { font-weight:800; letter-spacing:.2px; font-size:18px; display:flex; align-items:center; gap:10px }
+    .brand .dot { width:10px; height:10px; border-radius:99px; background:var(--accent); box-shadow:0 0 0 3px rgba(34,211,238,.12) }
+    .career-picker { display:flex; align-items:center; gap:8px; }
+    .career-picker select { background:var(--card); color:var(--text); border:1px solid var(--line); border-radius:10px; padding:8px 10px; cursor:pointer; }
+
+    .wrap { display:grid; grid-template-columns: 300px 1fr; min-height: calc(100vh - 58px); }
+    aside { border-right:1px solid var(--line); padding:16px; position:sticky; top:58px; height: calc(100vh - 58px); overflow:auto; }
+    .search { margin:4px 0 12px; position:relative }
+    .search input { width:100%; padding:10px 12px; border-radius:10px; border:1px solid var(--line); background:var(--card); color:var(--text) }
+    .section-title { font-size:12px; text-transform:uppercase; color:var(--muted); letter-spacing:.12em; margin:16px 0 8px }
+    .tree { display:flex; flex-direction:column; gap:8px; }
+    .pill { position:relative; display:flex; align-items:center; gap:10px; padding:10px 12px; background:var(--card); border:1px solid var(--line); border-radius:12px; cursor:pointer; transition:.18s ease; }
+    .pill:hover { border-color:#374151; transform: translateY(-1px); }
+    .pill .dot { width:10px; height:10px; border-radius:99px; background:var(--accent); box-shadow:0 0 0 3px rgba(34,211,238,.12); flex-shrink:0; }
+    .pill .pill-content { flex:1; min-width:0; padding-right:70px; }
+    .pill .pill-title { font-size:14px; line-height:1.35; margin-bottom:4px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; word-break:break-word; }
+    .pill small { color:var(--muted); font-size:11px; display:block; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .pill .progress-indicator { position:absolute; top:10px; right:38px; font-size:11px; color:var(--good); font-weight:600; background:var(--card); padding:2px 4px; border-radius:4px; }
+    .pill .favorite-btn { position:absolute; top:8px; right:8px; background:transparent; border:none; cursor:pointer; font-size:18px; padding:4px; line-height:1; transition:.2s ease; opacity:.4; }
+    .pill .favorite-btn:hover { opacity:1; transform:scale(1.15); }
+    .pill .favorite-btn.active { opacity:1; }
+    .badge { display:inline-flex; padding:3px 8px; border-radius:999px; border:1px solid var(--line); color:var(--muted); font-size:12px }
+    .badge.warn { color:#fcd34d; border-color:#f59e0b66; background:#f59e0b1a }
+    .badge.success { color:#6ee7b7; border-color:#10b98166; background:#10b9811a }
+
+    main { padding:24px; }
+
+    /* Loading spinner */
+    .loading-overlay { position:fixed; inset:0; background:rgba(6,10,27,.95); display:flex; align-items:center; justify-content:center; z-index:999; }
+    .loading-overlay.hidden { display:none; }
+    .spinner { width:50px; height:50px; border:4px solid var(--line); border-top-color:var(--accent); border-radius:50%; animation:spin 1s linear infinite; }
+    @keyframes spin { to { transform:rotate(360deg) } }
+
+    /* Breadcrumb */
+    .breadcrumb { display:flex; align-items:center; gap:8px; margin-bottom:16px; flex-wrap:wrap; font-size:14px; }
+    .breadcrumb span { color:var(--muted); }
+    .breadcrumb .sep { color:var(--line); }
+
+    /* Navigation buttons */
+    .lesson-nav { display:flex; gap:12px; margin-top:16px; }
+    .nav-btn { flex:1; padding:12px 16px; background:var(--card); color:var(--text); border:1px solid var(--line); border-radius:12px; cursor:pointer; font-size:14px; display:flex; align-items:center; justify-content:center; gap:8px; transition:.18s ease; font-family:inherit; }
+    .nav-btn:hover:not(:disabled) { border-color:#374151; transform:translateY(-1px); background:#1a1f3a; }
+    .nav-btn:disabled { opacity:.4; cursor:not-allowed; }
+    .nav-btn svg { width:16px; height:16px; }
+
+    /* Completed lesson checkbox */
+    .lesson-complete-wrapper { display:flex; align-items:center; gap:10px; padding:12px; background:#0b1336; border:1px solid var(--line); border-radius:12px; margin-top:16px; }
+    .lesson-complete-wrapper input[type="checkbox"] { width:18px; height:18px; cursor:pointer; accent-color:var(--good); }
+    .lesson-complete-wrapper label { cursor:pointer; font-size:14px; user-select:none; }
+
+    /* Lesson button with completion indicator */
+    .btn { position:relative; background:transparent; color:var(--text); border:1px solid var(--line); padding:8px 36px 8px 12px; border-radius:8px; cursor:pointer; font-size:14px; font-family:inherit; transition:.15s ease; width:100%; text-align:left; display:flex; align-items:center; justify-content:space-between; }
+    .btn:hover { border-color:#374151; background:#1a1f3a; }
+    .btn.completed { border-color:var(--good); }
+    .btn .check-icon { color:var(--good); font-size:16px; }
+    .btn .lesson-fav-btn { position:absolute; right:4px; top:50%; transform:translateY(-50%); background:transparent; border:none; cursor:pointer; font-size:16px; padding:4px; line-height:1; transition:.2s ease; opacity:.4; z-index:2; }
+    .btn .lesson-fav-btn:hover { opacity:1; transform:translateY(-50%) scale(1.15); }
+    .btn .lesson-fav-btn.active { opacity:1; }
+
+    .grid2 { display:grid; grid-template-columns: 1.45fr .55fr; gap:18px }
+    .panel { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; }
+    iframe { border:0; border-radius:12px; }
+    .muted { color:var(--muted) }
+    .divider { height:1px; background:var(--line); margin:12px 0 }
+    .desc { background:#0b1336; border:1px solid var(--line); border-radius:12px; padding:14px; line-height:1.5 }
+    .desc h5 { margin:0 0 6px; font-size:15px }
+    .desc ul { margin:8px 0 0 18px }
+    .res { margin-top:12px; }
+    .res a { color:#a5f3fc; text-decoration:none }
+
+    @media (max-width: 1100px){ .wrap{ grid-template-columns: 1fr } aside{ position:static; height:auto } .grid2{ grid-template-columns:1fr } .lesson-nav{ flex-direction:column } }
+
+    /* Welcome Modal */
+    .welcome-modal { position:fixed; inset:0; background:rgba(0,0,0,.85); display:flex; align-items:center; justify-content:center; z-index:9999; backdrop-filter:blur(4px); animation:fadeIn .3s ease; }
+    .welcome-modal.hidden { display:none; }
+    @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+    .welcome-content { background:var(--card); border:1px solid var(--accent); border-radius:20px; padding:32px; max-width:500px; width:90%; box-shadow:0 20px 60px rgba(0,0,0,.5), 0 0 0 1px rgba(34,211,238,.2); animation:slideUp .4s ease; position:relative; }
+    @keyframes slideUp { from { transform:translateY(30px); opacity:0; } to { transform:translateY(0); opacity:1; } }
+    .welcome-content h2 { margin:0 0 8px; color:var(--accent); font-size:28px; display:flex; align-items:center; gap:12px; }
+    .welcome-content .subtitle { color:var(--muted); font-size:14px; margin-bottom:20px; }
+    .welcome-content .features { display:flex; flex-direction:column; gap:12px; margin:20px 0; }
+    .welcome-content .feature-item { display:flex; align-items:flex-start; gap:12px; padding:10px; background:rgba(34,211,238,.05); border-radius:8px; border-left:3px solid var(--accent); }
+    .welcome-content .feature-icon { font-size:20px; flex-shrink:0; }
+    .welcome-content .feature-text { flex:1; }
+    .welcome-content .feature-text strong { color:var(--accent); }
+    .welcome-content .checkbox-wrapper { display:flex; align-items:center; gap:10px; margin-top:20px; padding:12px; background:rgba(34,211,238,.08); border-radius:8px; }
+    .welcome-content .checkbox-wrapper input { width:18px; height:18px; cursor:pointer; accent-color:var(--accent); }
+    .welcome-content .checkbox-wrapper label { cursor:pointer; font-size:14px; user-select:none; }
+    .welcome-content .close-btn { width:100%; padding:14px; background:var(--accent); color:#000; border:none; border-radius:10px; font-size:16px; font-weight:700; cursor:pointer; margin-top:20px; transition:.2s ease; font-family:inherit; }
+    .welcome-content .close-btn:hover { background:#33e4ff; transform:translateY(-2px); box-shadow:0 4px 12px rgba(34,211,238,.4); }
+  </style>
+</head>
+<body>
+  <!-- Welcome Modal -->
+  <div id="welcomeModal" class="welcome-modal hidden">
+    <div class="welcome-content">
+      <h2>👋 Bem-vindo!</h2>
+      <p class="subtitle">Roadmap Eletrônica - Sua jornada de aprendizado começa aqui</p>
+      
+      <div class="features">
+        <div class="feature-item">
+          <span class="feature-icon">🎯</span>
+          <div class="feature-text">
+            <strong>Escolha sua carreira</strong> no menu superior para ver a trilha completa de módulos
+          </div>
+        </div>
+        
+        <div class="feature-item">
+          <span class="feature-icon">📚</span>
+          <div class="feature-text">
+            <strong>Navegue pelos módulos</strong> na barra lateral esquerda
+          </div>
+        </div>
+        
+        <div class="feature-item">
+          <span class="feature-icon">⭐</span>
+          <div class="feature-text">
+            <strong>Favorite módulos e aulas</strong> clicando na estrela para criar sua trilha personalizada
+          </div>
+        </div>
+        
+        <div class="feature-item">
+          <span class="feature-icon">✅</span>
+          <div class="feature-text">
+            <strong>Marque aulas como concluídas</strong> para acompanhar seu progresso
+          </div>
+        </div>
+      </div>
+      
+      <div class="checkbox-wrapper">
+        <input type="checkbox" id="dontShowAgain">
+        <label for="dontShowAgain">Não mostrar esta mensagem novamente</label>
+      </div>
+      
+      <button class="close-btn" onclick="closeWelcomeModal()">Começar Agora! 🚀</button>
+    </div>
+  </div>
+  <!-- Loading Overlay -->
+  <div id="loadingOverlay" class="loading-overlay">
+    <div class="spinner"></div>
+  </div>
+
+  <header>
+    <div class="brand"><span class="dot"></span> <span>Roadmap Eletrônica — Brasil</span></div>
+    <div class="career-picker">
+      <label for="careerSelect" style="font-size:14px;color:var(--muted)">Carreira:</label>
+      <select id="careerSelect" onchange="onCareerChange(this.value)"></select>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <aside>
+      <div class="search"><input placeholder="Buscar módulo, matéria, aula..." oninput="filterList(this.value)"/></div>
+      <div class="section-title">Módulos da carreira</div>
+      <div id="core" class="tree"></div>
+    </aside>
+
+    <main>
+      <!-- Breadcrumb Navigation -->
+      <div id="breadcrumb" class="breadcrumb" style="display:none"></div>
+
+      <div class="grid2">
+        <section class="panel" id="lessonPanel">
+          <div class="stack" style="display:flex;align-items:center; justify-content:space-between">
+            <h3 id="lessonMainTitle" style="margin:0">—</h3>
+            <span class="badge" id="lessonPath">—</span>
+          </div>
+          <div class="divider"></div>
+          <p id="lessonDesc" class="muted" style="margin:0 0 12px">—</p>
+          <iframe id="lessonVideo" width="100%" height="420" allowfullscreen></iframe>
+          
+          <!-- Mark as Complete -->
+          <div class="lesson-complete-wrapper">
+            <input type="checkbox" id="lessonCompleteCheckbox" onchange="toggleLessonComplete()">
+            <label for="lessonCompleteCheckbox">Marcar esta aula como concluída</label>
+          </div>
+
+          <!-- Navigation Buttons -->
+          <div class="lesson-nav">
+            <button class="nav-btn" id="prevLessonBtn" onclick="navigateLesson('prev')" disabled>
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+              Aula Anterior
+            </button>
+            <button class="nav-btn" id="nextLessonBtn" onclick="navigateLesson('next')" disabled>
+              Próxima Aula
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+
+          <div class="divider"></div>
+          <div class="desc" id="lessonText">
+            <h5>Resumo da aula</h5>
+            <p>—</p>
+            <ul id="lessonKeypoints"></ul>
+            <div class="res">
+              <h5 style="margin:10px 0 6px">Recursos</h5>
+              <ul id="lessonResources" style="margin:0 0 0 18px"></ul>
+            </div>
+          </div>
+        </section>
+
+        <aside class="panel">
+          <div class="stack" style="display:flex;align-items:center; justify-content:space-between">
+            <h4 style="margin-top:0">Matérias & aulas do módulo</h4>
+            <span class="badge" id="moduleStateBadge" style="display:none"></span>
+          </div>
+          <div id="curriculum"></div>
+        </aside>
+      </div>
+    </main>
+  </div>
+
+  <footer style="border-top:1px solid var(--line); padding:20px; text-align:center; color:var(--muted); font-size:13px;">
+    <p style="margin:0 0 8px;">Copyright © 2025 Jose Vitor</p>
+    <p style="margin:0 0 4px; font-size:11px;">Licenciado sob AGPL-3.0 | Uso comercial não autorizado sem permissão</p>
+    <p style="margin:0; font-size:11px;"><a href="https://github.com/JoseRodriguesDev" target="_blank" rel="noopener" style="color:var(--accent); text-decoration:none;">github.com/JoseRodriguesDev</a></p>
+  </footer>
+
+<script>
+// ------------ Config ------------
+const MEME_EMBED = "https://www.youtube.com/embed/dQw4w9WgXcQ"; // player único temporário
+const DATA = { roadmap: null, careers: null };
+let activeCareer = null;
+let currentLesson = { modulo: null, materia: null, aula: null };
+
+// ------------ DOM helpers ------------
+const $ = q => document.querySelector(q);
+const $$ = q => [...document.querySelectorAll(q)];
+
+// ------------ Progress Tracking ------------
+function getProgressKey(aulaId) {
+  return `lesson_complete_${aulaId}`;
+}
+
+function isLessonComplete(aulaId) {
+  return localStorage.getItem(getProgressKey(aulaId)) === 'true';
+}
+
+function setLessonComplete(aulaId, complete) {
+  if (complete) {
+    localStorage.setItem(getProgressKey(aulaId), 'true');
+  } else {
+    localStorage.removeItem(getProgressKey(aulaId));
+  }
+  updateModuleProgress();
+  renderCoreList(); // Atualiza indicadores visuais
+}
+
+function getModuleProgress(moduloId) {
+  const modulo = (DATA.roadmap?.modulos || []).find(m => m.idModulo === moduloId);
+  if (!modulo) return { total: 0, completed: 0, percent: 0 };
+  
+  let total = 0;
+  let completed = 0;
+  
+  (modulo.materias || []).forEach(mat => {
+    (mat.aulas || []).forEach(aula => {
+      total++;
+      if (isLessonComplete(aula.idAula)) completed++;
+    });
+  });
+  
+  return { total, completed, percent: total > 0 ? Math.round((completed / total) * 100) : 0 };
+}
+
+function updateModuleProgress() {
+  if (!currentLesson.modulo) return;
+  const progress = getModuleProgress(currentLesson.modulo.idModulo);
+  const badge = $('#moduleStateBadge');
+  if (progress.total > 0) {
+    badge.style.display = 'inline-flex';
+    badge.textContent = `${progress.completed}/${progress.total} aulas (${progress.percent}%)`;
+    badge.className = progress.percent === 100 ? 'badge success' : 'badge';
+  }
+}
+
+function toggleLessonComplete() {
+  if (!currentLesson.aula) return;
+  const checkbox = $('#lessonCompleteCheckbox');
+  setLessonComplete(currentLesson.aula.idAula, checkbox.checked);
+  renderCurriculum(currentLesson.modulo); // Atualiza a lista de aulas
+}
+
+// ------------ Favorites System ------------
+function getFavoriteModuleKey(moduloId) {
+  return `favorite_module_${moduloId}`;
+}
+
+function getFavoriteLessonKey(aulaId) {
+  return `favorite_lesson_${aulaId}`;
+}
+
+function isModuleFavorite(moduloId) {
+  return localStorage.getItem(getFavoriteModuleKey(moduloId)) === 'true';
+}
+
+function isLessonFavorite(aulaId) {
+  return localStorage.getItem(getFavoriteLessonKey(aulaId)) === 'true';
+}
+
+function toggleModuleFavorite(moduloId, event) {
+  if (event) {
+    event.stopPropagation(); // Não ativa o click do módulo
+  }
+  const key = getFavoriteModuleKey(moduloId);
+  const isFav = isModuleFavorite(moduloId);
+  
+  if (isFav) {
+    localStorage.removeItem(key);
+  } else {
+    localStorage.setItem(key, 'true');
+  }
+  
+  renderCoreList(); // Atualiza visual
+}
+
+function toggleLessonFavorite(aulaId, event) {
+  if (event) {
+    event.stopPropagation(); // Não ativa o click da aula
+  }
+  const key = getFavoriteLessonKey(aulaId);
+  const isFav = isLessonFavorite(aulaId);
+  
+  if (isFav) {
+    localStorage.removeItem(key);
+  } else {
+    localStorage.setItem(key, 'true');
+  }
+  
+  if (currentLesson.modulo) {
+    renderCurriculum(currentLesson.modulo); // Atualiza visual
+  }
+}
+
+function getModulesWithFavorites() {
+  const all = DATA.roadmap?.modulos || [];
+  const favModules = [];
+  
+  all.forEach(modulo => {
+    // Módulo está favoritado?
+    const moduloFav = isModuleFavorite(modulo.idModulo);
+    
+    // Alguma aula do módulo está favoritada?
+    let hasAulaFav = false;
+    (modulo.materias || []).forEach(mat => {
+      (mat.aulas || []).forEach(aula => {
+        if (isLessonFavorite(aula.idAula)) {
+          hasAulaFav = true;
+        }
+      });
+    });
+    
+    if (moduloFav || hasAulaFav) {
+      favModules.push(modulo);
+    }
+  });
+  
+  return favModules;
+}
+
+// ------------ Navigation ------------
+function getAllLessonsFlat() {
+  const lessons = [];
+  const mods = getModulesForActiveCareer();
+  
+  mods.forEach(modulo => {
+    (modulo.materias || []).forEach(materia => {
+      (materia.aulas || []).forEach(aula => {
+        lessons.push({ modulo, materia, aula });
+      });
+    });
+  });
+  
+  return lessons;
+}
+
+function getCurrentLessonIndex() {
+  if (!currentLesson.aula) return -1;
+  const allLessons = getAllLessonsFlat();
+  return allLessons.findIndex(l => l.aula.idAula === currentLesson.aula.idAula);
+}
+
+function navigateLesson(direction) {
+  const allLessons = getAllLessonsFlat();
+  const currentIndex = getCurrentLessonIndex();
+  
+  if (currentIndex === -1) return;
+  
+  const newIndex = direction === 'next' ? currentIndex + 1 : currentIndex - 1;
+  
+  if (newIndex >= 0 && newIndex < allLessons.length) {
+    const lesson = allLessons[newIndex];
+    loadLesson(lesson.modulo, lesson.materia, lesson.aula);
+  }
+}
+
+function updateNavigationButtons() {
+  const allLessons = getAllLessonsFlat();
+  const currentIndex = getCurrentLessonIndex();
+  
+  const prevBtn = $('#prevLessonBtn');
+  const nextBtn = $('#nextLessonBtn');
+  
+  prevBtn.disabled = currentIndex <= 0;
+  nextBtn.disabled = currentIndex >= allLessons.length - 1 || currentIndex === -1;
+}
+
+// ------------ Breadcrumb ------------
+function updateBreadcrumb() {
+  const breadcrumb = $('#breadcrumb');
+  
+  if (!currentLesson.modulo || !currentLesson.materia || !currentLesson.aula) {
+    breadcrumb.style.display = 'none';
+    return;
+  }
+  
+  breadcrumb.style.display = 'flex';
+  breadcrumb.innerHTML = `
+    <span>${activeCareer?.nome || 'Carreira'}</span>
+    <span class="sep">›</span>
+    <span>${currentLesson.modulo.tituloModulo}</span>
+    <span class="sep">›</span>
+    <span>${currentLesson.materia.tituloMateria}</span>
+    <span class="sep">›</span>
+    <span style="color:var(--accent)">${currentLesson.aula.tituloAula}</span>
+  `;
+}
+
+// ------------ Loading ------------
+function showLoading() {
+  $('#loadingOverlay').classList.remove('hidden');
+}
+
+function hideLoading() {
+  $('#loadingOverlay').classList.add('hidden');
+}
+
+// ------------ Welcome Modal ------------
+function showWelcomeModal() {
+  const dontShow = localStorage.getItem('hideWelcomeModal');
+  if (dontShow !== 'true') {
+    $('#welcomeModal').classList.remove('hidden');
+  }
+}
+
+function closeWelcomeModal() {
+  const checkbox = $('#dontShowAgain');
+  if (checkbox.checked) {
+    localStorage.setItem('hideWelcomeModal', 'true');
+  }
+  $('#welcomeModal').classList.add('hidden');
+}
+
+// ------------ Render ------------
+function renderCareerPicker(){
+  const sel = $('#careerSelect');
+  sel.innerHTML = '';
+  (DATA.careers?.carreiras || []).forEach(c=>{
+    const opt=document.createElement('option');
+    opt.value=c.id; opt.textContent=c.nome;
+    sel.appendChild(opt);
+  });
+  const saved = localStorage.getItem('careerId');
+  const fallback = (DATA.careers?.carreiras?.[0]?.id) || '';
+  const initial = saved || fallback;
+  sel.value = initial;
+  onCareerChange(initial, {skipSave:true});
+}
+
+function onCareerChange(careerId, opts={}){
+  activeCareer = (DATA.careers?.carreiras || []).find(c=>c.id===careerId) || null;
+  if(!opts.skipSave) localStorage.setItem('careerId', careerId);
+  renderCoreList();
+  const mods = getModulesForActiveCareer();
+  if(mods.length){ selectModule(mods[0].idModulo); }
+}
+
+function getModulesForActiveCareer(){
+  const all = DATA.roadmap?.modulos || [];
+  if(!activeCareer) return all;
+  
+  // Se for carreira "Favoritos", retorna módulos favoritados
+  if(activeCareer.id === 'favoritos') {
+    return getModulesWithFavorites();
+  }
+  
+  const idsOrdered = activeCareer.trilha.map(t=>t.moduloId);
+  const map = Object.fromEntries(all.map(m=>[m.idModulo, m]));
+  return idsOrdered.map(id => map[id]).filter(Boolean);
+}
+
+function renderCoreList(){
+  const core = $('#core'); core.innerHTML = '';
+  const mods = getModulesForActiveCareer();
+  
+  if (mods.length === 0 && activeCareer?.id === 'favoritos') {
+    core.innerHTML = '<p style="color:var(--muted); text-align:center; padding:20px; font-size:14px;">Nenhum módulo ou aula favoritado ainda.<br><br>Clique na ⭐ para adicionar favoritos!</p>';
+    return;
+  }
+  
+  mods.forEach(m=>{
+    const progress = getModuleProgress(m.idModulo);
+    const progressText = progress.total > 0 ? `${progress.percent}%` : '';
+    const isFav = isModuleFavorite(m.idModulo);
+    
+    const el = document.createElement('div'); el.className = 'pill';
+    el.innerHTML = `<span class="dot"></span>
+      <div class="pill-content">
+        <div class="pill-title">
+          <strong>${(m.numeroModulo||0).toString().padStart(2,'0')}</strong> — ${m.tituloModulo}
+        </div>
+        <small title="${m.descricaoModulo || ''}">${m.descricaoModulo || ''}</small>
+      </div>
+      ${progressText ? `<span class="progress-indicator">${progressText}</span>` : ''}
+      <button class="favorite-btn ${isFav ? 'active' : ''}" onclick="toggleModuleFavorite('${m.idModulo}', event)" title="${isFav ? 'Remover dos favoritos' : 'Adicionar aos favoritos'}">${isFav ? '⭐' : '☆'}</button>`;
+    
+    // Click no card (não no botão)
+    el.addEventListener('click', (e) => {
+      if (!e.target.closest('.favorite-btn')) {
+        selectModule(m.idModulo);
+      }
+    });
+    
+    core.appendChild(el);
+  });
+}
+
+function filterList(q){
+  const query = (q||'').toLowerCase();
+  $$('.pill').forEach(p=>{ const text = p.textContent.toLowerCase(); p.style.display = text.includes(query) ? '' : 'none'; });
+}
+
+function scrollToLesson(){ 
+  // Scroll para o topo da página (y=0)
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function selectModule(idModulo){
+  const modulo = (DATA.roadmap?.modulos || []).find(m=>m.idModulo===idModulo);
+  if(!modulo){ return; }
+  renderCurriculum(modulo);
+  const firstMateria = modulo.materias?.[0];
+  if(firstMateria?.aulas?.[0]){
+    loadLesson(modulo, firstMateria, firstMateria.aulas[0]);
+  } else {
+    currentLesson = { modulo, materia: null, aula: null };
+    $('#lessonPath').textContent = `${modulo.idModulo} · (sem aulas)`;
+    $('#lessonMainTitle').textContent = modulo.tituloModulo;
+    $('#lessonDesc').textContent = modulo.descricaoModulo || '';
+    $('#lessonVideo').src = 'https://www.youtube.com/embed/dQw4w9WgXcQ';
+    setLessonText({html:"<p>Sem aulas cadastradas para este módulo ainda.</p>", points:[]});
+    updateBreadcrumb();
+    updateNavigationButtons();
+  }
+}
+
+function renderCurriculum(modulo){
+  const zone = $('#curriculum'); zone.innerHTML = '';
+  (modulo.materias||[]).forEach(mat=>{
+    const box = document.createElement('div'); box.style.marginBottom = '12px';
+    box.innerHTML = `<div style="font-weight:700; margin:6px 0">${mat.numeroMateria}. ${mat.tituloMateria}</div>`;
+    const ul = document.createElement('ul'); ul.style.listStyle = 'none'; ul.style.padding = '0';
+    (mat.aulas||[]).forEach(a=>{
+      const li=document.createElement('li'); li.style.margin='6px 0';
+      const isComplete = isLessonComplete(a.idAula);
+      const isFav = isLessonFavorite(a.idAula);
+      const btn=document.createElement('button'); 
+      btn.className = isComplete ? 'btn completed' : 'btn';
+      btn.innerHTML = `
+        <span>Aula ${a.numeroAula}: ${a.tituloAula}</span>
+        <div style="display:flex; align-items:center; gap:4px;">
+          ${isComplete ? '<span class="check-icon">✓</span>' : ''}
+          <button class="lesson-fav-btn ${isFav ? 'active' : ''}" onclick="toggleLessonFavorite('${a.idAula}', event)" title="${isFav ? 'Remover dos favoritos' : 'Adicionar aos favoritos'}">${isFav ? '⭐' : '☆'}</button>
+        </div>
+      `;
+      
+      // Click no botão (não no fav)
+      btn.addEventListener('click', (e) => {
+        if (!e.target.closest('.lesson-fav-btn')) {
+          loadLesson(modulo, mat, a);
+        }
+      });
+      
+      li.appendChild(btn); ul.appendChild(li);
+    });
+    box.appendChild(ul); zone.appendChild(box);
+  });
+}
+
+function setLessonText({html, points, resources}){
+  const box = document.getElementById('lessonText');
+  const list = document.getElementById('lessonKeypoints');
+  const res = document.getElementById('lessonResources');
+  box.querySelector('p').innerHTML = html || '';
+  list.innerHTML = '';
+  (points||[]).forEach(t=>{ const li=document.createElement('li'); li.textContent=t; list.appendChild(li); });
+  res.innerHTML = '';
+  (resources||[]).forEach(r=>{
+    const li=document.createElement('li');
+    li.innerHTML = `<a href="${r.url}" target="_blank" rel="noopener">${r.titulo || r.url}</a>`;
+    res.appendChild(li);
+  });
+}
+
+function loadLesson(modulo, materia, aula){
+  currentLesson = { modulo, materia, aula };
+  
+  $('#lessonPath').textContent = `${modulo.idModulo} · Matéria ${materia.numeroMateria} · Aula ${aula.numeroAula}`;
+  $('#lessonMainTitle').textContent = aula.tituloAula;
+  $('#lessonDesc').textContent = aula.descricao || '';
+  
+  // Usa o vídeo dos recursosPrincipais se disponível, senão usa o MEME_EMBED
+  const videoUrl = aula.recursosPrincipais?.[0]?.url || MEME_EMBED;
+  $('#lessonVideo').src = videoUrl;
+  
+  setLessonText({ html: aula.descricaoManual || '', points: aula.topicos || [], resources: (aula.recursosSecundarios||[]) });
+  
+  // Atualiza checkbox
+  const checkbox = $('#lessonCompleteCheckbox');
+  checkbox.checked = isLessonComplete(aula.idAula);
+  
+  updateBreadcrumb();
+  updateNavigationButtons();
+  updateModuleProgress();
+  scrollToLesson();
+}
+
+// ------------ Boot (carrega JSONs e inicializa) ------------
+(async function boot(){
+  showLoading();
+  try{
+    const [roadmapRes, careersRes] = await Promise.all([
+      fetch('./data/roadmap.json'),
+      fetch('./data/careers.json'),
+    ]);
+    if(!roadmapRes.ok || !careersRes.ok) throw new Error('Falha ao carregar JSON');
+    DATA.roadmap = await roadmapRes.json();
+    DATA.careers = await careersRes.json();
+    
+    // Valida dados
+    if (!DATA.roadmap?.modulos || !DATA.careers?.carreiras) {
+      throw new Error('Dados JSON inválidos ou incompletos');
+    }
+    
+    // Renderiza interface
+    renderCareerPicker();
+    hideLoading();
+    
+    // Mostra modal de boas-vindas (se não foi desabilitado)
+    setTimeout(() => {
+      showWelcomeModal();
+    }, 500);
+  }catch(err){
+    console.error(err);
+    hideLoading();
+    alert('❌ Erro ao carregar os dados.\n\nVerifique se:\n• Está servindo os arquivos via HTTP (não file://)\n• Os arquivos JSON estão na pasta /data/\n• Os arquivos JSON são válidos\n\nErro: ' + err.message);
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+{
+  "carreiras": [
+    {
+      "id": "todos_modulos",
+      "nome": "📚 Todos os Módulos",
+      "trilha": [
+        { "moduloId": "M01", "materias": "*", "prioridade": 10 },
+        { "moduloId": "M02", "materias": "*", "prioridade": 9 },
+        { "moduloId": "M05", "materias": "*", "prioridade": 8 },
+        { "moduloId": "M06", "materias": "*", "prioridade": 7 },
+        { "moduloId": "M07", "materias": "*", "prioridade": 6 },
+        { "moduloId": "M08", "materias": "*", "prioridade": 5 },
+        { "moduloId": "M09", "materias": "*", "prioridade": 4 },
+        { "moduloId": "M10", "materias": "*", "prioridade": 3 },
+        { "moduloId": "M11", "materias": "*", "prioridade": 2 },
+        { "moduloId": "M12", "materias": "*", "prioridade": 1 }
+      ]
+    },
+    {
+      "id": "favoritos",
+      "nome": "⭐ Favoritos",
+      "trilha": []
+    },
+    {
+      "id": "nucleo_comum",
+      "nome": "Fundamentos / Núcleo Comum",
+      "trilha": [
+        { "moduloId": "M01", "materias": "*", "prioridade": 10 },
+        { "moduloId": "M02", "materias": "*", "prioridade": 9 }
+      ]
+    },
+    {
+      "id": "manut_smartphones",
+      "nome": "Manutenção de Smartphones (início rápido)",
+      "trilha": [
+        { "moduloId": "M01", "materias": "*", "prioridade": 10 },
+        { "moduloId": "M02", "materias": "*", "prioridade": 9 },
+        { "moduloId": "M11", "materias": "*", "prioridade": 8 },
+        { "moduloId": "M12", "materias": "*", "prioridade": 7 }
+      ]
+    },
+    {
+      "id": "reparo_bench",
+      "nome": "Reparo & Bancada (início rápido)",
+      "trilha": [
+        { "moduloId": "M01", "materias": "*", "prioridade": 10 },
+        { "moduloId": "M02", "materias": "*", "prioridade": 9 },
+        { "moduloId": "M05", "materias": "*", "prioridade": 8 },
+        { "moduloId": "M06", "materias": "*", "prioridade": 7 }
+      ]
+    },
+    {
+      "id": "smps_inverters",
+      "nome": "Fontes Chaveadas & Inversores (início rápido)",
+      "trilha": [
+        { "moduloId": "M01", "materias": "*", "prioridade": 10 },
+        { "moduloId": "M02", "materias": "*", "prioridade": 9 },
+        { "moduloId": "M07", "materias": "*", "prioridade": 8 },
+        { "moduloId": "M08", "materias": "*", "prioridade": 7 }
+      ]
+    },
+    {
+      "id": "auto_eletronica",
+      "nome": "Eletrônica Automotiva (diagnóstico & módulos)",
+      "trilha": [
+        { "moduloId": "M01", "materias": "*", "prioridade": 10 },
+        { "moduloId": "M02", "materias": "*", "prioridade": 9 },
+        { "moduloId": "M09", "materias": "*", "prioridade": 8 },
+        { "moduloId": "M10", "materias": "*", "prioridade": 7 }
+      ]
+    }
+  ]
+}
