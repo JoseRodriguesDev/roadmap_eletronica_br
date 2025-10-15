@@ -39,9 +39,9 @@ Para detalhes completos, consulte o arquivo LICENSE na raiz do projeto.
     .pill .pill-title { font-size:14px; line-height:1.35; margin-bottom:4px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; word-break:break-word; }
     .pill small { color:var(--muted); font-size:11px; display:block; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
     .pill .progress-indicator { position:absolute; top:10px; right:38px; font-size:11px; color:var(--good); font-weight:600; background:var(--card); padding:2px 4px; border-radius:4px; }
-    .pill .favorite-btn { position:absolute; top:8px; right:8px; background:transparent; border:none; cursor:pointer; font-size:18px; padding:4px; line-height:1; transition:.2s ease; opacity:.4; }
+    .pill .favorite-btn { position:absolute; top:8px; right:8px; background:transparent; border:none; cursor:pointer; font-size:18px; padding:4px; line-height:1; transition:.2s ease; opacity:.6; color:var(--muted); filter:drop-shadow(0 0 1px rgba(0,0,0,.5)); }
     .pill .favorite-btn:hover { opacity:1; transform:scale(1.15); }
-    .pill .favorite-btn.active { opacity:1; }
+    .pill .favorite-btn.active { opacity:1; color:#fbbf24; filter:drop-shadow(0 2px 4px rgba(251,191,36,.3)); }
     .badge { display:inline-flex; padding:3px 8px; border-radius:999px; border:1px solid var(--line); color:var(--muted); font-size:12px }
     .badge.warn { color:#fcd34d; border-color:#f59e0b66; background:#f59e0b1a }
     .badge.success { color:#6ee7b7; border-color:#10b98166; background:#10b9811a }
@@ -76,9 +76,9 @@ Para detalhes completos, consulte o arquivo LICENSE na raiz do projeto.
     .btn:hover { border-color:#374151; background:#1a1f3a; }
     .btn.completed { border-color:var(--good); }
     .btn .check-icon { color:var(--good); font-size:16px; }
-    .btn .lesson-fav-btn { position:absolute; right:4px; top:50%; transform:translateY(-50%); background:transparent; border:none; cursor:pointer; font-size:16px; padding:4px; line-height:1; transition:.2s ease; opacity:.4; z-index:2; }
+    .btn .lesson-fav-btn { position:absolute; right:4px; top:50%; transform:translateY(-50%); background:transparent; border:none; cursor:pointer; font-size:16px; padding:4px; line-height:1; transition:.2s ease; opacity:.6; color:var(--muted); filter:drop-shadow(0 0 1px rgba(0,0,0,.5)); z-index:2; }
     .btn .lesson-fav-btn:hover { opacity:1; transform:translateY(-50%) scale(1.15); }
-    .btn .lesson-fav-btn.active { opacity:1; }
+    .btn .lesson-fav-btn.active { opacity:1; color:#fbbf24; filter:drop-shadow(0 2px 4px rgba(251,191,36,.3)); }
 
     .grid2 { display:grid; grid-template-columns: 1.45fr .55fr; gap:18px }
     .panel { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; }
@@ -91,7 +91,105 @@ Para detalhes completos, consulte o arquivo LICENSE na raiz do projeto.
     .res { margin-top:12px; }
     .res a { color:#a5f3fc; text-decoration:none }
 
-    @media (max-width: 1100px){ .wrap{ grid-template-columns: 1fr } aside{ position:static; height:auto } .grid2{ grid-template-columns:1fr } .lesson-nav{ flex-direction:column } }
+    /* Mobile Navigation */
+    .mobile-menu-btn { display:none; background:transparent; border:1px solid var(--line); border-radius:8px; padding:8px 12px; color:var(--text); cursor:pointer; font-size:14px; }
+    .mobile-lessons-btn { display:none; position:fixed; bottom:20px; right:20px; background:var(--accent); color:#000; border:none; border-radius:999px; padding:12px 20px; font-size:15px; font-weight:700; cursor:pointer; box-shadow:0 4px 16px rgba(34,211,238,.5); z-index:10; transition:.2s ease; align-items:center; gap:8px; font-family:inherit; }
+    .mobile-lessons-btn span:first-child { font-size:20px; }
+    .mobile-lessons-btn:active { transform:scale(.95); }
+    .overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,.7); z-index:998; backdrop-filter:blur(2px); }
+    .overlay.active { display:block; }
+    .mobile-career-picker { display:none; }
+
+    @media (max-width: 1100px){ 
+      .wrap{ grid-template-columns: 1fr } 
+      .grid2{ grid-template-columns:1fr; gap:0; } 
+      .lesson-nav{ flex-direction:column }
+      
+      /* Esconder visualmente o painel de aulas do grid em mobile */
+      .grid2 > #lessonsPanel { display:none; }
+      #lessonsPanel.active { display:block; }
+      
+      /* Menu de módulos lateral esquerdo */
+      #modulesMenu { 
+        position:fixed; 
+        left:0; 
+        top:58px; 
+        height:calc(100vh - 58px); 
+        width:85%; 
+        max-width:320px;
+        background:var(--bg); 
+        border-right:1px solid var(--line); 
+        border-radius:0;
+        transform:translateX(-100%); 
+        transition:transform .3s ease; 
+        z-index:999;
+        overflow-y:auto;
+      }
+      #modulesMenu.active { transform:translateX(0); }
+      
+      /* Painel de aulas lateral direito */
+      #lessonsPanel {
+        position:fixed;
+        right:0;
+        top:58px;
+        height:calc(100vh - 58px);
+        width:85%;
+        max-width:320px;
+        background:var(--card);
+        border:1px solid var(--line);
+        border-radius:0;
+        transform:translateX(100%);
+        transition:transform .3s ease;
+        z-index:999;
+        overflow-y:auto;
+        margin:0;
+      }
+      #lessonsPanel.active { transform:translateX(0); }
+      
+      /* Mostrar botões mobile */
+      .mobile-menu-btn { display:flex; align-items:center; gap:8px; }
+      .mobile-lessons-btn { display:flex; align-items:center; justify-content:center; }
+      
+      /* Ajustar header */
+      header { padding:12px 16px; }
+      .brand { font-size:16px; }
+      .brand span:last-child { display:none; }
+      .brand::after { content:'Roadmap'; }
+      .career-picker { display:none; } /* Esconde seletor do header em mobile */
+      
+      /* Mostrar seletor de carreira dentro do menu lateral */
+      .mobile-career-picker { 
+        display:block; 
+        padding:16px 0; 
+        border-bottom:1px solid var(--line); 
+        margin-bottom:12px;
+      }
+      .mobile-career-picker select { 
+        width:100%; 
+        background:var(--card); 
+        color:var(--text); 
+        border:1px solid var(--line); 
+        border-radius:10px; 
+        padding:10px 12px; 
+        cursor:pointer; 
+        font-size:14px;
+      }
+      
+      /* Ajustar conteúdo principal */
+      main { padding:16px; }
+      
+      /* Modal de boas-vindas mobile */
+      .welcome-content { 
+        padding:24px 20px; 
+        max-width:95%; 
+        margin:0 10px;
+      }
+      .welcome-content h2 { font-size:22px; }
+      .welcome-content .features { gap:10px; }
+      .welcome-content .feature-item { padding:8px; font-size:14px; }
+      .welcome-content .feature-icon { font-size:18px; }
+      .welcome-content .close-btn { padding:12px; }
+    }
 
     /* Welcome Modal */
     .welcome-modal { position:fixed; inset:0; background:rgba(0,0,0,.85); display:flex; align-items:center; justify-content:center; z-index:9999; backdrop-filter:blur(4px); animation:fadeIn .3s ease; }
@@ -131,7 +229,7 @@ Para detalhes completos, consulte o arquivo LICENSE na raiz do projeto.
         <div class="feature-item">
           <span class="feature-icon">📚</span>
           <div class="feature-text">
-            <strong>Navegue pelos módulos</strong> na barra lateral esquerda
+            <strong>Navegue pelos módulos</strong> na barra lateral (ou menu hamburguer no mobile)
           </div>
         </div>
         
@@ -164,6 +262,12 @@ Para detalhes completos, consulte o arquivo LICENSE na raiz do projeto.
   </div>
 
   <header>
+    <button class="mobile-menu-btn" onclick="toggleModulesMenu()">
+      <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+      <span>Módulos</span>
+    </button>
     <div class="brand"><span class="dot"></span> <span>Roadmap Eletrônica — Brasil</span></div>
     <div class="career-picker">
       <label for="careerSelect" style="font-size:14px;color:var(--muted)">Carreira:</label>
@@ -171,8 +275,23 @@ Para detalhes completos, consulte o arquivo LICENSE na raiz do projeto.
     </div>
   </header>
 
+  <!-- Overlay para fechar menus -->
+  <div id="mobileOverlay" class="overlay" onclick="closeMobileMenus()"></div>
+
+  <!-- Botão flutuante de lista de aulas (mobile) -->
+  <button class="mobile-lessons-btn" onclick="toggleLessonsMenu()" title="Ver lista de aulas">
+    <span>📚</span>
+    <span>Aulas</span>
+  </button>
+
   <div class="wrap">
-    <aside>
+    <aside id="modulesMenu">
+      <!-- Seletor de carreira mobile -->
+      <div class="mobile-career-picker">
+        <label for="careerSelectMobile" style="font-size:13px;color:var(--muted);margin-bottom:6px;display:block;">Carreira:</label>
+        <select id="careerSelectMobile" onchange="onCareerChange(this.value)"></select>
+      </div>
+      
       <div class="search"><input placeholder="Buscar módulo, matéria, aula..." oninput="filterList(this.value)"/></div>
       <div class="section-title">Módulos da carreira</div>
       <div id="core" class="tree"></div>
@@ -222,7 +341,7 @@ Para detalhes completos, consulte o arquivo LICENSE na raiz do projeto.
           </div>
         </section>
 
-        <aside class="panel">
+        <aside class="panel" id="lessonsPanel">
           <div class="stack" style="display:flex;align-items:center; justify-content:space-between">
             <h4 style="margin-top:0">Matérias & aulas do módulo</h4>
             <span class="badge" id="moduleStateBadge" style="display:none"></span>
@@ -477,22 +596,42 @@ function closeWelcomeModal() {
 // ------------ Render ------------
 function renderCareerPicker(){
   const sel = $('#careerSelect');
+  const selMobile = $('#careerSelectMobile');
+  
+  // Limpa ambos os selects
   sel.innerHTML = '';
+  selMobile.innerHTML = '';
+  
+  // Popula ambos com as mesmas opções
   (DATA.careers?.carreiras || []).forEach(c=>{
     const opt=document.createElement('option');
     opt.value=c.id; opt.textContent=c.nome;
     sel.appendChild(opt);
+    
+    const optMobile=document.createElement('option');
+    optMobile.value=c.id; optMobile.textContent=c.nome;
+    selMobile.appendChild(optMobile);
   });
+  
   const saved = localStorage.getItem('careerId');
   const fallback = (DATA.careers?.carreiras?.[0]?.id) || '';
   const initial = saved || fallback;
+  
+  // Define o valor inicial em ambos
   sel.value = initial;
+  selMobile.value = initial;
+  
   onCareerChange(initial, {skipSave:true});
 }
 
 function onCareerChange(careerId, opts={}){
   activeCareer = (DATA.careers?.carreiras || []).find(c=>c.id===careerId) || null;
   if(!opts.skipSave) localStorage.setItem('careerId', careerId);
+  
+  // Sincroniza ambos os selects
+  $('#careerSelect').value = careerId;
+  $('#careerSelectMobile').value = careerId;
+  
   renderCoreList();
   const mods = getModulesForActiveCareer();
   if(mods.length){ selectModule(mods[0].idModulo); }
@@ -540,7 +679,7 @@ function renderCoreList(){
     // Click no card (não no botão)
     el.addEventListener('click', (e) => {
       if (!e.target.closest('.favorite-btn')) {
-        selectModule(m.idModulo);
+        selectModuleMobile(m.idModulo);
       }
     });
     
@@ -600,7 +739,7 @@ function renderCurriculum(modulo){
       // Click no botão (não no fav)
       btn.addEventListener('click', (e) => {
         if (!e.target.closest('.lesson-fav-btn')) {
-          loadLesson(modulo, mat, a);
+          loadLessonMobile(modulo, mat, a);
         }
       });
       
@@ -646,6 +785,48 @@ function loadLesson(modulo, materia, aula){
   updateNavigationButtons();
   updateModuleProgress();
   scrollToLesson();
+}
+
+// ------------ Mobile Menu Controls ------------
+function toggleModulesMenu() {
+  const menu = $('#modulesMenu');
+  const overlay = $('#mobileOverlay');
+  const lessonsPanel = $('#lessonsPanel');
+  
+  menu.classList.toggle('active');
+  overlay.classList.toggle('active');
+  
+  // Fecha o menu de aulas se estiver aberto
+  lessonsPanel.classList.remove('active');
+}
+
+function toggleLessonsMenu() {
+  const menu = $('#modulesMenu');
+  const lessonsPanel = $('#lessonsPanel');
+  const overlay = $('#mobileOverlay');
+  
+  lessonsPanel.classList.toggle('active');
+  overlay.classList.toggle('active');
+  
+  // Fecha o menu de módulos se estiver aberto
+  menu.classList.remove('active');
+}
+
+function closeMobileMenus() {
+  $('#modulesMenu').classList.remove('active');
+  $('#lessonsPanel').classList.remove('active');
+  $('#mobileOverlay').classList.remove('active');
+}
+
+// Fecha os menus quando selecionar um módulo ou aula
+function selectModuleMobile(idModulo) {
+  selectModule(idModulo);
+  closeMobileMenus();
+}
+
+function loadLessonMobile(modulo, materia, aula) {
+  loadLesson(modulo, materia, aula);
+  closeMobileMenus();
 }
 
 // ------------ Boot (carrega JSONs e inicializa) ------------
