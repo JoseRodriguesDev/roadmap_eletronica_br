@@ -111,35 +111,20 @@ Sistemas elétricos veiculares e diagnóstico automotivo
 
 ## 📋 Conteúdo dos Módulos
 
-### M01: Fundamentos de Eletricidade
-Corrente, tensão, potência, circuitos série/paralelo e medições
+### 🚧 Em Construção
 
-### M02: Fontes AC-DC e Retificação
-Diodos, ponte retificadora, capacitores de filtro e ripple
+O conteúdo completo dos módulos está sendo desenvolvido. Atualmente temos:
 
-### M05: Instrumentos de Bancada
-Multímetro, fonte, osciloscópio e sondas
+- ✅ **10 módulos** estruturados
+- ✅ **60+ aulas** planejadas
+- 🎥 **Vídeos educacionais** sendo adicionados progressivamente
+- 📚 **Recursos complementares** em cada aula
 
-### M06: Soldagem e Diagnóstico
-Técnicas de solda THT/SMD, retrabalho e diagnóstico
+**Status atual:**
+- **Módulo 01** (Fundamentos de Eletricidade): 10 aulas com vídeos
+- Demais módulos: Estrutura pronta, vídeos em processo de adição
 
-### M07: Conversores DC-DC
-Buck, Boost, indutores e controle PWM
-
-### M08: Fontes Chaveadas e Inversores
-Flyback, meia-ponte, inversores DC-AC e EMI
-
-### M09: Elétrica Automotiva Básica
-Bateria, alternador, proteções e aterramento
-
-### M10: Diagnóstico Automotivo
-Sensores, atuadores, ECU, OBD-II e CAN
-
-### M11: Hardware de Smartphones
-SoC, RAM, Flash, PMU, display e schematic
-
-### M12: Reparo de Smartphones
-Defeitos comuns, soldagem SMD, reballing e jumpers
+Para ver o conteúdo completo e atualizado, acesse a plataforma e explore as carreiras disponíveis!
 
 ## 💻 Como Usar
 
