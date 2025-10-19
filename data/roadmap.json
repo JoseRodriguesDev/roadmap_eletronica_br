@@ -18,11 +18,21 @@
               "descricao": "Entenda o que é um elétron e sua importância na eletricidade.",
               "descricaoManual": "<strong>Ideia-chave:</strong> O elétron é a partícula fundamental que gera a eletricidade. Entenda sua estrutura e comportamento.",
               "recursosPrincipais": [
-                { "idRecurso": "ELETRON", "tipo": "video", "url": "https://www.youtube.com/embed/j999y3Vt6aY", "titulo": "O que é elétron" }
+                {
+                  "idRecurso": "ELETRON",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/j999y3Vt6aY",
+                  "titulo": "O que é elétron"
+                }
               ],
               "recursosSecundarios": [
-                { "tipo": "video", "titulo": "Corrente Elétrica - Mundo da Elétrica", "url": "https://www.youtube.com/watch?v=kGW4vsHJBN0" }
-              ]
+                {
+                  "tipo": "video",
+                  "titulo": "Corrente Elétrica - Mundo da Elétrica",
+                  "url": "https://www.youtube.com/watch?v=kGW4vsHJBN0"
+                }
+              ],
+              "idUnico": "aula_1760840618638_m53rpfrr"
             },
             {
               "idAula": "M01-1-2",
@@ -31,11 +41,21 @@
               "descricao": "Como os elétrons se movimentam e geram corrente elétrica.",
               "descricaoManual": "Entenda como o movimento dos elétrons cria o fluxo de corrente em um circuito fechado.",
               "recursosPrincipais": [
-                { "idRecurso": "MOVIMENTO", "tipo": "video", "url": "https://www.youtube.com/embed/PVEQs-h8BNs", "titulo": "Movimento do elétron" }
+                {
+                  "idRecurso": "MOVIMENTO",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/PVEQs-h8BNs",
+                  "titulo": "Movimento do elétron"
+                }
               ],
               "recursosSecundarios": [
-                { "tipo": "video", "titulo": "Lei de Ohm — Eletrônica Básica", "url": "https://www.youtube.com/watch?v=Dx8glwnHw9Q" }
-              ]
+                {
+                  "tipo": "video",
+                  "titulo": "Lei de Ohm — Eletrônica Básica",
+                  "url": "https://www.youtube.com/watch?v=Dx8glwnHw9Q"
+                }
+              ],
+              "idUnico": "aula_1760840618638_m53rpfrs"
             },
             {
               "idAula": "M01-1-3",
@@ -44,11 +64,21 @@
               "descricao": "Os três conceitos fundamentais da eletricidade.",
               "descricaoManual": "<strong>Corrente</strong> (A) = fluxo de elétrons. <strong>Tensão</strong> (V) = pressão elétrica. <strong>Resistência</strong> (Ω) = oposição ao fluxo.",
               "recursosPrincipais": [
-                { "idRecurso": "CTR", "tipo": "video", "url": "https://www.youtube.com/embed/yXvvV8EmvEU", "titulo": "Corrente, tensão e resistência" }
+                {
+                  "idRecurso": "CTR",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/yXvvV8EmvEU",
+                  "titulo": "Corrente, tensão e resistência"
+                }
               ],
               "recursosSecundarios": [
-                { "tipo": "video", "titulo": "Potência Elétrica e Energia", "url": "https://www.youtube.com/watch?v=fonXiK50QFw" }
-              ]
+                {
+                  "tipo": "video",
+                  "titulo": "Potência Elétrica e Energia",
+                  "url": "https://www.youtube.com/watch?v=fonXiK50QFw"
+                }
+              ],
+              "idUnico": "aula_1760840618638_m53rpfrt"
             },
             {
               "idAula": "M01-1-4",
@@ -57,11 +87,21 @@
               "descricao": "A relação fundamental: V = R × I",
               "descricaoManual": "<strong>V = R × I</strong> - Tensão é igual à resistência multiplicada pela corrente. Base para todos os cálculos.",
               "recursosPrincipais": [
-                { "idRecurso": "OHM1", "tipo": "video", "url": "https://www.youtube.com/embed/xJUmrpSDubk", "titulo": "1ª Lei de Ohm" }
+                {
+                  "idRecurso": "OHM1",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/xJUmrpSDubk",
+                  "titulo": "1ª Lei de Ohm"
+                }
               ],
               "recursosSecundarios": [
-                { "tipo": "video", "titulo": "Lei de Ohm — Eletrônica Básica", "url": "https://www.youtube.com/watch?v=Dx8glwnHw9Q" }
-              ]
+                {
+                  "tipo": "video",
+                  "titulo": "Lei de Ohm — Eletrônica Básica",
+                  "url": "https://www.youtube.com/watch?v=Dx8glwnHw9Q"
+                }
+              ],
+              "idUnico": "aula_1760840618638_m53rpfru"
             },
             {
               "idAula": "M01-1-5",
@@ -70,11 +110,21 @@
               "descricao": "Resistência em função das dimensões do condutor.",
               "descricaoManual": "<strong>R = ρ × L / A</strong> - A resistência depende do material (ρ), comprimento (L) e área (A).",
               "recursosPrincipais": [
-                { "idRecurso": "OHM2", "tipo": "video", "url": "https://www.youtube.com/embed/DM5O5lrtG1c", "titulo": "2ª Lei de Ohm" }
+                {
+                  "idRecurso": "OHM2",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/DM5O5lrtG1c",
+                  "titulo": "2ª Lei de Ohm"
+                }
               ],
               "recursosSecundarios": [
-                { "tipo": "video", "titulo": "Lei de Ohm na prática", "url": "https://www.youtube.com/watch?v=i3Jc_wVFsQ8" }
-              ]
+                {
+                  "tipo": "video",
+                  "titulo": "Lei de Ohm na prática",
+                  "url": "https://www.youtube.com/watch?v=i3Jc_wVFsQ8"
+                }
+              ],
+              "idUnico": "aula_1760840618638_m53rpfrv"
             },
             {
               "idAula": "M01-1-6",
@@ -83,11 +133,21 @@
               "descricao": "Unidades elétricas: Ampere, Volt, Ohm, Watt e suas conversões.",
               "descricaoManual": "<strong>A</strong> (Ampere) = corrente. <strong>V</strong> (Volt) = tensão. <strong>Ω</strong> (Ohm) = resistência. <strong>W</strong> (Watt) = potência.",
               "recursosPrincipais": [
-                { "idRecurso": "UNIDADES", "tipo": "video", "url": "https://www.youtube.com/embed/vjApv4GSIpw", "titulo": "Unidades de medida" }
+                {
+                  "idRecurso": "UNIDADES",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/vjApv4GSIpw",
+                  "titulo": "Unidades de medida"
+                }
               ],
               "recursosSecundarios": [
-                { "tipo": "video", "titulo": "Grandezas Elétricas", "url": "https://www.youtube.com/watch?v=i3Jc_wVFsQ8" }
-              ]
+                {
+                  "tipo": "video",
+                  "titulo": "Grandezas Elétricas",
+                  "url": "https://www.youtube.com/watch?v=i3Jc_wVFsQ8"
+                }
+              ],
+              "idUnico": "aula_1760840618638_m53rpfrw"
             },
             {
               "idAula": "M01-1-7",
@@ -96,13 +156,24 @@
               "descricao": "Entenda potência elétrica e como calcular o consumo.",
               "descricaoManual": "<strong>P = V × I</strong> - Potência em Watts. Quanto maior a potência, maior o consumo de energia.",
               "recursosPrincipais": [
-                { "idRecurso": "POTENCIA_WATTS", "tipo": "video", "url": "https://www.youtube.com/embed/X2GInZVVwQQ", "titulo": "Potência Elétrica Watts" }
+                {
+                  "idRecurso": "POTENCIA_WATTS",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/X2GInZVVwQQ",
+                  "titulo": "Potência Elétrica Watts"
+                }
               ],
               "recursosSecundarios": [
-                { "tipo": "video", "titulo": "Potência Elétrica e Energia", "url": "https://www.youtube.com/watch?v=fonXiK50QFw" }
-              ]
+                {
+                  "tipo": "video",
+                  "titulo": "Potência Elétrica e Energia",
+                  "url": "https://www.youtube.com/watch?v=fonXiK50QFw"
+                }
+              ],
+              "idUnico": "aula_1760840618638_m53rpfrx"
             }
-          ]
+          ],
+          "idUnico": "mat_1760840618638_m53rpfrq"
         },
         {
           "idMateria": "M01-2",
@@ -116,11 +187,21 @@
               "descricao": "Conheça os componentes essenciais da eletrônica.",
               "descricaoManual": "Visão geral dos componentes mais utilizados: resistores, capacitores, diodos, transistores, LEDs e muito mais.",
               "recursosPrincipais": [
-                { "idRecurso": "COMPONENTES", "tipo": "video", "url": "https://www.youtube.com/embed/a-l4tGfis0Q", "titulo": "Os 18 Componentes Eletrônicos Mais Importantes" }
+                {
+                  "idRecurso": "COMPONENTES",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/a-l4tGfis0Q",
+                  "titulo": "Os 18 Componentes Eletrônicos Mais Importantes"
+                }
               ],
               "recursosSecundarios": [
-                { "tipo": "video", "titulo": "Componentes eletrônicos básicos", "url": "https://www.youtube.com/watch?v=DH2hF0Z9Yns" }
-              ]
+                {
+                  "tipo": "video",
+                  "titulo": "Componentes eletrônicos básicos",
+                  "url": "https://www.youtube.com/watch?v=DH2hF0Z9Yns"
+                }
+              ],
+              "idUnico": "aula_1760840618638_m53rpfrz"
             },
             {
               "idAula": "M01-2-2",
@@ -129,11 +210,21 @@
               "descricao": "Aprenda a testar componentes com multímetro.",
               "descricaoManual": "Técnicas de teste para resistores, capacitores, diodos, transistores e outros componentes usando multímetro.",
               "recursosPrincipais": [
-                { "idRecurso": "TESTE_COMP", "tipo": "video", "url": "https://www.youtube.com/embed/qgzzU2021XU", "titulo": "Como testar os componentes eletrônicos" }
+                {
+                  "idRecurso": "TESTE_COMP",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/qgzzU2021XU",
+                  "titulo": "Como testar os componentes eletrônicos"
+                }
               ],
               "recursosSecundarios": [
-                { "tipo": "video", "titulo": "Testando componentes na prática", "url": "https://www.youtube.com/watch?v=fonXiK50QFw" }
-              ]
+                {
+                  "tipo": "video",
+                  "titulo": "Testando componentes na prática",
+                  "url": "https://www.youtube.com/watch?v=fonXiK50QFw"
+                }
+              ],
+              "idUnico": "aula_1760840618638_m53rpfs0"
             },
             {
               "idAula": "M01-2-3",
@@ -142,13 +233,24 @@
               "descricao": "Entenda o funcionamento dos transformadores elétricos.",
               "descricaoManual": "Transformadores convertem tensão AC usando indução eletromagnética. Relação de espiras define tensão de saída.",
               "recursosPrincipais": [
-                { "idRecurso": "TRANSFORMADOR", "tipo": "video", "url": "https://www.youtube.com/embed/awv3ewkYC9E", "titulo": "Como funcionam os transformadores" }
+                {
+                  "idRecurso": "TRANSFORMADOR",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/awv3ewkYC9E",
+                  "titulo": "Como funcionam os transformadores"
+                }
               ],
               "recursosSecundarios": [
-                { "tipo": "video", "titulo": "Transformadores na prática", "url": "https://www.youtube.com/watch?v=DH2hF0Z9Yns" }
-              ]
+                {
+                  "tipo": "video",
+                  "titulo": "Transformadores na prática",
+                  "url": "https://www.youtube.com/watch?v=DH2hF0Z9Yns"
+                }
+              ],
+              "idUnico": "aula_1760840618638_m53rpfs1"
             }
-          ]
+          ],
+          "idUnico": "mat_1760840618638_m53rpfry"
         },
         {
           "idMateria": "M01-3",
@@ -162,11 +264,21 @@
               "descricao": "Por que retorno importa.",
               "descricaoManual": "<strong>Sem caminho de volta</strong> não há corrente.",
               "recursosPrincipais": [
-                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+                {
+                  "idRecurso": "MEME",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                  "titulo": "(temporário) Player da aula"
+                }
               ],
               "recursosSecundarios": [
-                { "tipo": "video", "titulo": "Circuito fechado vs aberto (na prática)", "url": "https://www.youtube.com/watch?v=xTEZRquXgSI" }
-              ]
+                {
+                  "tipo": "video",
+                  "titulo": "Circuito fechado vs aberto (na prática)",
+                  "url": "https://www.youtube.com/watch?v=xTEZRquXgSI"
+                }
+              ],
+              "idUnico": "aula_1760840618638_m53rpfs3"
             },
             {
               "idAula": "M01-3-2",
@@ -175,11 +287,21 @@
               "descricao": "O que é ‘terra’.",
               "descricaoManual": "‘Terra’ é referência; evite laços de ground.",
               "recursosPrincipais": [
-                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+                {
+                  "idRecurso": "MEME",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                  "titulo": "(temporário) Player da aula"
+                }
               ],
               "recursosSecundarios": [
-                { "tipo": "video", "titulo": "O que é Terra/Ground?", "url": "https://www.youtube.com/watch?v=sxxFW396sl8" }
-              ]
+                {
+                  "tipo": "video",
+                  "titulo": "O que é Terra/Ground?",
+                  "url": "https://www.youtube.com/watch?v=sxxFW396sl8"
+                }
+              ],
+              "idUnico": "aula_1760840618638_m53rpfs4"
             },
             {
               "idAula": "M01-3-3",
@@ -188,11 +310,21 @@
               "descricao": "Visualizando trajetos.",
               "descricaoManual": "Pense em malhas fechadas; corrente prefere menor impedância efetiva.",
               "recursosPrincipais": [
-                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+                {
+                  "idRecurso": "MEME",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                  "titulo": "(temporário) Player da aula"
+                }
               ],
               "recursosSecundarios": [
-                { "tipo": "video", "titulo": "Nós, ramos e malhas — visão prática", "url": "https://www.youtube.com/watch?v=FKu8GS6Sc0I" }
-              ]
+                {
+                  "tipo": "video",
+                  "titulo": "Nós, ramos e malhas — visão prática",
+                  "url": "https://www.youtube.com/watch?v=FKu8GS6Sc0I"
+                }
+              ],
+              "idUnico": "aula_1760840618638_m53rpfs5"
             },
             {
               "idAula": "M01-3-4",
@@ -201,17 +333,28 @@
               "descricao": "Como medir certo.",
               "descricaoManual": "Volts: paralelo. Corrente: série (atenção ao borne). Resistência: sem tensão.",
               "recursosPrincipais": [
-                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+                {
+                  "idRecurso": "MEME",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                  "titulo": "(temporário) Player da aula"
+                }
               ],
               "recursosSecundarios": [
-                { "tipo": "video", "titulo": "Como usar o Multímetro", "url": "https://www.youtube.com/watch?v=u4W93w8FxJQ" }
-              ]
+                {
+                  "tipo": "video",
+                  "titulo": "Como usar o Multímetro",
+                  "url": "https://www.youtube.com/watch?v=u4W93w8FxJQ"
+                }
+              ],
+              "idUnico": "aula_1760840618638_m53rpfs6"
             }
-          ]
+          ],
+          "idUnico": "mat_1760840618638_m53rpfs2"
         }
-      ]
+      ],
+      "idUnico": "mod_1760840641098_m53rpfrq"
     },
-
     {
       "idModulo": "M02",
       "numeroModulo": 2,
@@ -230,11 +373,21 @@
               "descricao": "Teste e polaridade.",
               "descricaoManual": "Função diodo no multímetro: conduz num sentido; bloqueia no outro.",
               "recursosPrincipais": [
-                { "idRecurso": "DIODO_IDEAL", "tipo": "video", "url": "https://www.youtube.com/embed/SezYKlbS5K4", "titulo": "Diodo ideal" }
+                {
+                  "idRecurso": "DIODO_IDEAL",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/SezYKlbS5K4",
+                  "titulo": "Diodo ideal"
+                }
               ],
               "recursosSecundarios": [
-                { "tipo": "video", "titulo": "Testando diodo com multímetro", "url": "https://www.youtube.com/watch?v=E6DRQYOKl5M" }
-              ]
+                {
+                  "tipo": "video",
+                  "titulo": "Testando diodo com multímetro",
+                  "url": "https://www.youtube.com/watch?v=E6DRQYOKl5M"
+                }
+              ],
+              "idUnico": "aula_1760840618638_m53rpfs9"
             },
             {
               "idAula": "M02-1-2",
@@ -243,11 +396,21 @@
               "descricao": "Conceito e montagem.",
               "descricaoManual": "Quatro diodos formando retificador de onda completa.",
               "recursosPrincipais": [
-                { "idRecurso": "PONTE_RETIFICADORA", "tipo": "video", "url": "https://www.youtube.com/embed/kbSIicYJNyQ", "titulo": "O que é uma ponte retificadora?" }
+                {
+                  "idRecurso": "PONTE_RETIFICADORA",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/kbSIicYJNyQ",
+                  "titulo": "O que é uma ponte retificadora?"
+                }
               ],
               "recursosSecundarios": [
-                { "tipo": "video", "titulo": "Ponte de diodos (conceito)", "url": "https://www.youtube.com/watch?v=SdXzFCqidCk" }
-              ]
+                {
+                  "tipo": "video",
+                  "titulo": "Ponte de diodos (conceito)",
+                  "url": "https://www.youtube.com/watch?v=SdXzFCqidCk"
+                }
+              ],
+              "idUnico": "aula_1760840618638_m53rpfsa"
             },
             {
               "idAula": "M02-1-3",
@@ -256,13 +419,24 @@
               "descricao": "Escolha do diodo.",
               "descricaoManual": "Queda ~1,4 V em ponte; verifique If, Vr e dissipação.",
               "recursosPrincipais": [
-                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+                {
+                  "idRecurso": "MEME",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                  "titulo": "(temporário) Player da aula"
+                }
               ],
               "recursosSecundarios": [
-                { "tipo": "video", "titulo": "Retificador: ponte vs tape-center", "url": "https://www.youtube.com/watch?v=Giz8xhXzdcw" }
-              ]
+                {
+                  "tipo": "video",
+                  "titulo": "Retificador: ponte vs tape-center",
+                  "url": "https://www.youtube.com/watch?v=Giz8xhXzdcw"
+                }
+              ],
+              "idUnico": "aula_1760840618638_m53rpfsb"
             }
-          ]
+          ],
+          "idUnico": "mat_1760840618638_m53rpfs8"
         },
         {
           "idMateria": "M02-2",
@@ -276,11 +450,21 @@
               "descricao": "Cálculo de ripple.",
               "descricaoManual": "ΔV ≈ I/(2·f·C) para onda completa.",
               "recursosPrincipais": [
-                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+                {
+                  "idRecurso": "MEME",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                  "titulo": "(temporário) Player da aula"
+                }
               ],
               "recursosSecundarios": [
-                { "tipo": "video", "titulo": "Capacitor de filtro — prática", "url": "https://www.youtube.com/watch?v=Ok9kDEbpUYI" }
-              ]
+                {
+                  "tipo": "video",
+                  "titulo": "Capacitor de filtro — prática",
+                  "url": "https://www.youtube.com/watch?v=Ok9kDEbpUYI"
+                }
+              ],
+              "idUnico": "aula_1760840618638_m53rpfsd"
             },
             {
               "idAula": "M02-2-2",
@@ -289,11 +473,21 @@
               "descricao": "Técnicas de medição.",
               "descricaoManual": "Use AC+DC no osciloscópio; atenção a leituras subestimadas no multímetro.",
               "recursosPrincipais": [
-                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+                {
+                  "idRecurso": "MEME",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                  "titulo": "(temporário) Player da aula"
+                }
               ],
               "recursosSecundarios": [
-                { "tipo": "video", "titulo": "Fator de ripple no osciloscópio", "url": "https://www.youtube.com/watch?v=JumUIf3lopw" }
-              ]
+                {
+                  "tipo": "video",
+                  "titulo": "Fator de ripple no osciloscópio",
+                  "url": "https://www.youtube.com/watch?v=JumUIf3lopw"
+                }
+              ],
+              "idUnico": "aula_1760840618638_m53rpfse"
             },
             {
               "idAula": "M02-2-3",
@@ -302,13 +496,24 @@
               "descricao": "Serra (ripple).",
               "descricaoManual": "Mais C ⇒ menos ripple, mas maior surto de carga.",
               "recursosPrincipais": [
-                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+                {
+                  "idRecurso": "MEME",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                  "titulo": "(temporário) Player da aula"
+                }
               ],
               "recursosSecundarios": [
-                { "tipo": "video", "titulo": "Filtro capacitivo em retificadores", "url": "https://www.youtube.com/watch?v=GYvQGHaH790" }
-              ]
+                {
+                  "tipo": "video",
+                  "titulo": "Filtro capacitivo em retificadores",
+                  "url": "https://www.youtube.com/watch?v=GYvQGHaH790"
+                }
+              ],
+              "idUnico": "aula_1760840618638_m53rpfsf"
             }
-          ]
+          ],
+          "idUnico": "mat_1760840618638_m53rpfsc"
         },
         {
           "idMateria": "M02-3",
@@ -322,11 +527,21 @@
               "descricao": "Proteções básicas.",
               "descricaoManual": "Fusível abre em falha; NTC limita surto; bleeder descarrega.",
               "recursosPrincipais": [
-                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+                {
+                  "idRecurso": "MEME",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                  "titulo": "(temporário) Player da aula"
+                }
               ],
               "recursosSecundarios": [
-                { "tipo": "video", "titulo": "PTC vs NTC — como usar", "url": "https://www.youtube.com/watch?v=8EIM3fvvhAk" }
-              ]
+                {
+                  "tipo": "video",
+                  "titulo": "PTC vs NTC — como usar",
+                  "url": "https://www.youtube.com/watch?v=8EIM3fvvhAk"
+                }
+              ],
+              "idUnico": "aula_1760840618638_m53rpfsh"
             },
             {
               "idAula": "M02-3-2",
@@ -335,11 +550,21 @@
               "descricao": "Procedimento.",
               "descricaoManual": "Use resistor apropriado; confirme tensão remanescente.",
               "recursosPrincipais": [
-                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+                {
+                  "idRecurso": "MEME",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                  "titulo": "(temporário) Player da aula"
+                }
               ],
               "recursosSecundarios": [
-                { "tipo": "video", "titulo": "Como descarregar capacitor", "url": "https://www.youtube.com/watch?v=33Q-opoyVsQ" }
-              ]
+                {
+                  "tipo": "video",
+                  "titulo": "Como descarregar capacitor",
+                  "url": "https://www.youtube.com/watch?v=33Q-opoyVsQ"
+                }
+              ],
+              "idUnico": "aula_1760840618638_m53rpfsi"
             },
             {
               "idAula": "M02-3-3",
@@ -348,17 +573,28 @@
               "descricao": "Boas práticas.",
               "descricaoManual": "Reduza área de loop; torça pares; trilhas curtas e grossas.",
               "recursosPrincipais": [
-                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+                {
+                  "idRecurso": "MEME",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                  "titulo": "(temporário) Player da aula"
+                }
               ],
               "recursosSecundarios": [
-                { "tipo": "video", "titulo": "Fusível térmico & boas práticas", "url": "https://www.youtube.com/watch?v=FrN92RBh-fc" }
-              ]
+                {
+                  "tipo": "video",
+                  "titulo": "Fusível térmico & boas práticas",
+                  "url": "https://www.youtube.com/watch?v=FrN92RBh-fc"
+                }
+              ],
+              "idUnico": "aula_1760840618638_m53rpfsj"
             }
-          ]
+          ],
+          "idUnico": "mat_1760840618638_m53rpfsg"
         }
-      ]
+      ],
+      "idUnico": "mod_1760840618638_m53rpfs7"
     },
-
     {
       "idModulo": "M03",
       "numeroModulo": 3,
@@ -377,9 +613,15 @@
               "descricao": "Conceitos fundamentais de eletricidade aplicados ao veículo.",
               "descricaoManual": "Entenda os princípios básicos de eletricidade no contexto automotivo: tensão, corrente e circuitos.",
               "recursosPrincipais": [
-                { "idRecurso": "ELETRICA_INTRO", "tipo": "video", "url": "https://www.youtube.com/embed/Gs88WQDjP3k", "titulo": "Introdução à eletricidade básica" }
+                {
+                  "idRecurso": "ELETRICA_INTRO",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/Gs88WQDjP3k",
+                  "titulo": "Introdução à eletricidade básica"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfsm"
             },
             {
               "idAula": "M03-1-2",
@@ -388,9 +630,15 @@
               "descricao": "Funcionamento da bateria e sistema de recarga.",
               "descricaoManual": "Como a bateria armazena energia e como o sistema de recarga mantém sua carga durante o funcionamento do veículo.",
               "recursosPrincipais": [
-                { "idRecurso": "BATERIA_RECARGA", "tipo": "video", "url": "https://www.youtube.com/embed/b9-7kszbw_g", "titulo": "Bateria e recarga" }
+                {
+                  "idRecurso": "BATERIA_RECARGA",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/b9-7kszbw_g",
+                  "titulo": "Bateria e recarga"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfsn"
             },
             {
               "idAula": "M03-1-3",
@@ -399,9 +647,15 @@
               "descricao": "Como funciona o alternador do veículo.",
               "descricaoManual": "O alternador converte energia mecânica em elétrica para recarregar a bateria e alimentar o sistema elétrico.",
               "recursosPrincipais": [
-                { "idRecurso": "ALTERNADOR", "tipo": "video", "url": "https://www.youtube.com/embed/coVp9N063Js", "titulo": "Alternador" }
+                {
+                  "idRecurso": "ALTERNADOR",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/coVp9N063Js",
+                  "titulo": "Alternador"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfso"
             },
             {
               "idAula": "M03-1-4",
@@ -410,9 +664,15 @@
               "descricao": "Sistema de partida do veículo.",
               "descricaoManual": "Como o motor de arranque funciona para dar partida no motor de combustão.",
               "recursosPrincipais": [
-                { "idRecurso": "MOTOR_ARRANQUE", "tipo": "video", "url": "https://www.youtube.com/embed/z-Ty30PTqEg", "titulo": "Motor de arranque" }
+                {
+                  "idRecurso": "MOTOR_ARRANQUE",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/z-Ty30PTqEg",
+                  "titulo": "Motor de arranque"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfsp"
             },
             {
               "idAula": "M03-1-5",
@@ -421,9 +681,15 @@
               "descricao": "Sistema de iluminação do veículo.",
               "descricaoManual": "Como funcionam a central elétrica e os circuitos de faróis e lanternas.",
               "recursosPrincipais": [
-                { "idRecurso": "CENTRAL_FAROL", "tipo": "video", "url": "https://www.youtube.com/embed/Z3Us8R1rAr8", "titulo": "Central elétrica, farol e lanternas" }
+                {
+                  "idRecurso": "CENTRAL_FAROL",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/Z3Us8R1rAr8",
+                  "titulo": "Central elétrica, farol e lanternas"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfsq"
             },
             {
               "idAula": "M03-1-6",
@@ -432,9 +698,15 @@
               "descricao": "Circuitos auxiliares do veículo.",
               "descricaoManual": "Funcionamento dos comandos e circuitos auxiliares: botões, limpador de para-brisa, ignição, luz de ré e buzina.",
               "recursosPrincipais": [
-                { "idRecurso": "CIRCUITOS_AUX", "tipo": "video", "url": "https://www.youtube.com/embed/tfB2v2Y2qis", "titulo": "Botões, limpador, ignição, luz de ré e buzina" }
+                {
+                  "idRecurso": "CIRCUITOS_AUX",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/tfB2v2Y2qis",
+                  "titulo": "Botões, limpador, ignição, luz de ré e buzina"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfsr"
             },
             {
               "idAula": "M03-1-7",
@@ -443,9 +715,15 @@
               "descricao": "Como testar módulo de ignição.",
               "descricaoManual": "Procedimento de teste e diagnóstico do módulo de ignição com 6 pinos.",
               "recursosPrincipais": [
-                { "idRecurso": "TESTE_IGNICAO", "tipo": "video", "url": "https://www.youtube.com/embed/rVtrvJiePh4", "titulo": "Teste do módulo de ignição com 6 pinos" }
+                {
+                  "idRecurso": "TESTE_IGNICAO",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/rVtrvJiePh4",
+                  "titulo": "Teste do módulo de ignição com 6 pinos"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfss"
             },
             {
               "idAula": "M03-1-8",
@@ -454,9 +732,15 @@
               "descricao": "Sistema de sinalização do veículo.",
               "descricaoManual": "Como funcionam os circuitos de seta (pisca) e alerta (pisca-alerta) do veículo.",
               "recursosPrincipais": [
-                { "idRecurso": "SETA_ALERTA", "tipo": "video", "url": "https://www.youtube.com/embed/govhbQcCBr0", "titulo": "Funcionamento da seta e alerta" }
+                {
+                  "idRecurso": "SETA_ALERTA",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/govhbQcCBr0",
+                  "titulo": "Funcionamento da seta e alerta"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfst"
             },
             {
               "idAula": "M03-1-9",
@@ -465,9 +749,15 @@
               "descricao": "Como identificar e interpretar fios no chicote automotivo.",
               "descricaoManual": "Aprenda a identificar fios por cor, bitola e função no sistema elétrico do veículo.",
               "recursosPrincipais": [
-                { "idRecurso": "IDENT_FIOS", "tipo": "video", "url": "https://www.youtube.com/embed/h3HwrofbOhw", "titulo": "Identificação de fios automotivos" }
+                {
+                  "idRecurso": "IDENT_FIOS",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/h3HwrofbOhw",
+                  "titulo": "Identificação de fios automotivos"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfsu"
             },
             {
               "idAula": "M03-1-10",
@@ -476,9 +766,15 @@
               "descricao": "Sistema de vidros elétricos.",
               "descricaoManual": "Como funciona o circuito de vidros elétricos, motor, relés e comandos.",
               "recursosPrincipais": [
-                { "idRecurso": "VIDRO_ELETRICO", "tipo": "video", "url": "https://www.youtube.com/embed/qdq16oETHMw", "titulo": "Funcionamento de vidro elétrico automotivo" }
+                {
+                  "idRecurso": "VIDRO_ELETRICO",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/qdq16oETHMw",
+                  "titulo": "Funcionamento de vidro elétrico automotivo"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfsv"
             },
             {
               "idAula": "M03-1-11",
@@ -487,9 +783,15 @@
               "descricao": "Diagnóstico de falhas na ventoinha.",
               "descricaoManual": "Como diagnosticar e resolver problemas no sistema de arrefecimento - ventoinha do radiador.",
               "recursosPrincipais": [
-                { "idRecurso": "VENTOINHA", "tipo": "video", "url": "https://www.youtube.com/embed/mr3ICBtiCmg", "titulo": "Ventoinha do radiador não funciona" }
+                {
+                  "idRecurso": "VENTOINHA",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/mr3ICBtiCmg",
+                  "titulo": "Ventoinha do radiador não funciona"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfsw"
             },
             {
               "idAula": "M03-1-12",
@@ -498,9 +800,15 @@
               "descricao": "Diagnóstico de descarga da bateria.",
               "descricaoManual": "Como identificar e resolver problemas de descarga excessiva da bateria do veículo.",
               "recursosPrincipais": [
-                { "idRecurso": "BATERIA_ARRIANDO", "tipo": "video", "url": "https://www.youtube.com/embed/nIsRWb3qwNc", "titulo": "Bateria do carro arriando" }
+                {
+                  "idRecurso": "BATERIA_ARRIANDO",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/nIsRWb3qwNc",
+                  "titulo": "Bateria do carro arriando"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfsx"
             },
             {
               "idAula": "M03-1-13",
@@ -509,15 +817,22 @@
               "descricao": "Como testar o sistema de aterramento.",
               "descricaoManual": "Procedimentos para verificar a qualidade do aterramento (massa) do veículo e identificar problemas.",
               "recursosPrincipais": [
-                { "idRecurso": "TESTE_ATERRAMENTO", "tipo": "video", "url": "https://www.youtube.com/embed/_5pniXTsrUE", "titulo": "Teste de aterramento do carro" }
+                {
+                  "idRecurso": "TESTE_ATERRAMENTO",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/_5pniXTsrUE",
+                  "titulo": "Teste de aterramento do carro"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfsy"
             }
-          ]
+          ],
+          "idUnico": "mat_1760840618638_m53rpfsl"
         }
-      ]
+      ],
+      "idUnico": "mod_1760840618638_m53rpfsk"
     },
-
     {
       "idModulo": "M04",
       "numeroModulo": 4,
@@ -536,9 +851,15 @@
               "descricao": "Funcionamento dos sistemas de ignição mecânicos tradicionais.",
               "descricaoManual": "Entenda como funcionavam os sistemas de ignição mecânicos, com distribuidor, platinado e bobina tradicional.",
               "recursosPrincipais": [
-                { "idRecurso": "IGNICAO_MECANICA", "tipo": "video", "url": "https://www.youtube.com/embed/Om-JPJJZpAo", "titulo": "Sistemas de ignição mecânica" }
+                {
+                  "idRecurso": "IGNICAO_MECANICA",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/Om-JPJJZpAo",
+                  "titulo": "Sistemas de ignição mecânica"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpft1"
             },
             {
               "idAula": "M04-1-2",
@@ -547,9 +868,15 @@
               "descricao": "Evolução para sistemas com controle eletrônico transistorizado.",
               "descricaoManual": "Como a tecnologia transistorizada melhorou a confiabilidade e eficiência dos sistemas de ignição.",
               "recursosPrincipais": [
-                { "idRecurso": "IGNICAO_TRANSISTORIZADO", "tipo": "video", "url": "https://www.youtube.com/embed/x5xUvqm5vQQ", "titulo": "Sistemas de ignição transistorizado" }
+                {
+                  "idRecurso": "IGNICAO_TRANSISTORIZADO",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/x5xUvqm5vQQ",
+                  "titulo": "Sistemas de ignição transistorizado"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpft2"
             },
             {
               "idAula": "M04-1-3",
@@ -558,11 +885,18 @@
               "descricao": "Sistemas de ignição sem distribuidor (DIS e COP).",
               "descricaoManual": "Tecnologia moderna de ignição estática: maior confiabilidade, sem desgaste mecânico e melhor controle da centelha.",
               "recursosPrincipais": [
-                { "idRecurso": "IGNICAO_ESTATICO", "tipo": "video", "url": "https://www.youtube.com/embed/OgUU2PNKxko", "titulo": "Sistema de ignição estático" }
+                {
+                  "idRecurso": "IGNICAO_ESTATICO",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/OgUU2PNKxko",
+                  "titulo": "Sistema de ignição estático"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpft3"
             }
-          ]
+          ],
+          "idUnico": "mat_1760840618638_m53rpft0"
         },
         {
           "idMateria": "M04-2",
@@ -576,9 +910,15 @@
               "descricao": "Componentes e funcionamento dos subsistemas do motor.",
               "descricaoManual": "Análise detalhada dos subsistemas que compõem o motor de combustão interna: alimentação, ignição, arrefecimento e lubrificação.",
               "recursosPrincipais": [
-                { "idRecurso": "SUBSISTEMAS_MOTOR", "tipo": "video", "url": "https://www.youtube.com/embed/L8An_xyrz-c", "titulo": "Subsistemas do Motor a Combustão" }
+                {
+                  "idRecurso": "SUBSISTEMAS_MOTOR",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/L8An_xyrz-c",
+                  "titulo": "Subsistemas do Motor a Combustão"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpft5"
             },
             {
               "idAula": "M04-2-2",
@@ -587,9 +927,15 @@
               "descricao": "Funcionamento e componentes do sistema de ignição.",
               "descricaoManual": "Como o sistema de ignição funciona: bobina, distribuidor, velas e controle eletrônico da centelha.",
               "recursosPrincipais": [
-                { "idRecurso": "SISTEMA_IGNICAO", "tipo": "video", "url": "https://www.youtube.com/embed/QkD5YOqVIBA", "titulo": "Sistema de Ignição" }
+                {
+                  "idRecurso": "SISTEMA_IGNICAO",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/QkD5YOqVIBA",
+                  "titulo": "Sistema de Ignição"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpft6"
             },
             {
               "idAula": "M04-2-3",
@@ -598,9 +944,15 @@
               "descricao": "Sistema de escape e arrefecimento do motor.",
               "descricaoManual": "Funcionamento dos sistemas de descarga dos gases de escape e arrefecimento do motor para manter a temperatura ideal.",
               "recursosPrincipais": [
-                { "idRecurso": "SISTEMA_DESCARGA_ARREFECIMENTO", "tipo": "video", "url": "https://www.youtube.com/embed/LAaBgPxSkRE", "titulo": "Sistema de Descarga e Arrefecimento" }
+                {
+                  "idRecurso": "SISTEMA_DESCARGA_ARREFECIMENTO",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/LAaBgPxSkRE",
+                  "titulo": "Sistema de Descarga e Arrefecimento"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpft7"
             },
             {
               "idAula": "M04-2-4",
@@ -609,15 +961,22 @@
               "descricao": "Lubrificação e distribuição de movimento no motor.",
               "descricaoManual": "Como o sistema de lubrificação protege os componentes do motor e como o sistema de distribuição controla as válvulas.",
               "recursosPrincipais": [
-                { "idRecurso": "SISTEMA_LUBRIFICACAO_DISTRIBUICAO", "tipo": "video", "url": "https://www.youtube.com/embed/x5XT9vEIfok", "titulo": "Sistema de Lubrificação e Distribuição" }
+                {
+                  "idRecurso": "SISTEMA_LUBRIFICACAO_DISTRIBUICAO",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/x5XT9vEIfok",
+                  "titulo": "Sistema de Lubrificação e Distribuição"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpft8"
             }
-          ]
+          ],
+          "idUnico": "mat_1760840618638_m53rpft4"
         }
-      ]
+      ],
+      "idUnico": "mod_1760840618638_m53rpfsz"
     },
-
     {
       "idModulo": "M05",
       "numeroModulo": 5,
@@ -636,9 +995,15 @@
               "descricao": "Introdução aos conceitos de injeção eletrônica.",
               "descricaoManual": "Fundamentos da injeção eletrônica automotiva e sua importância no funcionamento do veículo.",
               "recursosPrincipais": [
-                { "idRecurso": "INTRODUCAO_AULA1", "tipo": "video", "url": "https://www.youtube.com/embed/hNecNnjEUiE", "titulo": "Introdução - Aula 1" }
+                {
+                  "idRecurso": "INTRODUCAO_AULA1",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/hNecNnjEUiE",
+                  "titulo": "Introdução - Aula 1"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpftb"
             },
             {
               "idAula": "M05-1-2",
@@ -647,9 +1012,15 @@
               "descricao": "Conceitos fundamentais sobre sensores automotivos.",
               "descricaoManual": "Tipos de sensores utilizados na injeção eletrônica e suas funções no sistema.",
               "recursosPrincipais": [
-                { "idRecurso": "SENSORES_AULA2", "tipo": "video", "url": "https://www.youtube.com/embed/WQEiRh4_OXw", "titulo": "Sensores - Aula 2" }
+                {
+                  "idRecurso": "SENSORES_AULA2",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/WQEiRh4_OXw",
+                  "titulo": "Sensores - Aula 2"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpftc"
             },
             {
               "idAula": "M05-1-3",
@@ -658,9 +1029,15 @@
               "descricao": "Sensores de temperatura e posição da borboleta de aceleração.",
               "descricaoManual": "Funcionamento e diagnóstico dos sensores de temperatura e posição da borboleta.",
               "recursosPrincipais": [
-                { "idRecurso": "SENSORES_BORBOLETA", "tipo": "video", "url": "https://www.youtube.com/embed/HBbYds1VBz0", "titulo": "Sensores de temperatura e posição da Borboleta - aula 3" }
+                {
+                  "idRecurso": "SENSORES_BORBOLETA",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/HBbYds1VBz0",
+                  "titulo": "Sensores de temperatura e posição da Borboleta - aula 3"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpftd"
             },
             {
               "idAula": "M05-1-4",
@@ -669,9 +1046,15 @@
               "descricao": "Princípios dos sensores indutivos e de efeito Hall.",
               "descricaoManual": "Como funcionam os sensores indutivos e de efeito Hall no sistema automotivo.",
               "recursosPrincipais": [
-                { "idRecurso": "SENSORES_INDUTIVOS_HALL", "tipo": "video", "url": "https://www.youtube.com/embed/ibQdT3_Mu9Y", "titulo": "Sensores Indutivos e Efeito Hall - aula 4" }
+                {
+                  "idRecurso": "SENSORES_INDUTIVOS_HALL",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/ibQdT3_Mu9Y",
+                  "titulo": "Sensores Indutivos e Efeito Hall - aula 4"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfte"
             },
             {
               "idAula": "M05-1-5",
@@ -680,9 +1063,15 @@
               "descricao": "Diagnóstico de falhas em sensores de efeito Hall e indutivos.",
               "descricaoManual": "Como identificar e diagnosticar problemas comuns em sensores de efeito Hall e indutivos.",
               "recursosPrincipais": [
-                { "idRecurso": "DEFEITOS_SENSORES", "tipo": "video", "url": "https://www.youtube.com/embed/zQiDDEZ1aeM", "titulo": "Defeitos dos Sensores de Efeito Hall e Indutivos - aula 5" }
+                {
+                  "idRecurso": "DEFEITOS_SENSORES",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/zQiDDEZ1aeM",
+                  "titulo": "Defeitos dos Sensores de Efeito Hall e Indutivos - aula 5"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpftf"
             },
             {
               "idAula": "M05-1-6",
@@ -691,9 +1080,15 @@
               "descricao": "Teste prático do sensor MAP.",
               "descricaoManual": "Como testar o sensor MAP (Manifold Absolute Pressure) na prática.",
               "recursosPrincipais": [
-                { "idRecurso": "MAP_PRATICA", "tipo": "video", "url": "https://www.youtube.com/embed/tS6MEGb5npQ", "titulo": "Sensor MAP na Prática - aula 6" }
+                {
+                  "idRecurso": "MAP_PRATICA",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/tS6MEGb5npQ",
+                  "titulo": "Sensor MAP na Prática - aula 6"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpftg"
             },
             {
               "idAula": "M05-1-7",
@@ -702,9 +1097,15 @@
               "descricao": "Procedimento de teste do sensor de temperatura do ar.",
               "descricaoManual": "Métodos para testar o sensor de temperatura do ar admitido pelo motor.",
               "recursosPrincipais": [
-                { "idRecurso": "TESTE_TEMP_AR", "tipo": "video", "url": "https://www.youtube.com/embed/Qg--lnZk4JE", "titulo": "Como testar sensor de Temperatura do Ar - Aula 7" }
+                {
+                  "idRecurso": "TESTE_TEMP_AR",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/Qg--lnZk4JE",
+                  "titulo": "Como testar sensor de Temperatura do Ar - Aula 7"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfth"
             },
             {
               "idAula": "M05-1-8",
@@ -713,9 +1114,15 @@
               "descricao": "Conceitos sobre atuadores automotivos.",
               "descricaoManual": "Introdução aos atuadores automotivos e seu papel no sistema de injeção eletrônica.",
               "recursosPrincipais": [
-                { "idRecurso": "ATUADORES_AUTOMOTIVOS", "tipo": "video", "url": "https://www.youtube.com/embed/JrmP3VotPE0", "titulo": "O que são atuadores automotivo - Aula 8" }
+                {
+                  "idRecurso": "ATUADORES_AUTOMOTIVOS",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/JrmP3VotPE0",
+                  "titulo": "O que são atuadores automotivo - Aula 8"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfti"
             },
             {
               "idAula": "M05-1-9",
@@ -724,9 +1131,15 @@
               "descricao": "Fundamentos do sistema de ignição automotiva.",
               "descricaoManual": "Princípios básicos do sistema de ignição e sua importância no funcionamento do motor.",
               "recursosPrincipais": [
-                { "idRecurso": "SISTEMA_IGNICAO", "tipo": "video", "url": "https://www.youtube.com/embed/2EjQOvdzkrg", "titulo": "Introdução ao Sistema de Ignição - aula 9" }
+                {
+                  "idRecurso": "SISTEMA_IGNICAO",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/2EjQOvdzkrg",
+                  "titulo": "Introdução ao Sistema de Ignição - aula 9"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpftj"
             },
             {
               "idAula": "M05-1-10",
@@ -735,9 +1148,15 @@
               "descricao": "Funcionamento e características das velas de ignição.",
               "descricaoManual": "Como funcionam as velas de ignição, tipos e manutenção adequada.",
               "recursosPrincipais": [
-                { "idRecurso": "VELAS_IGNICAO", "tipo": "video", "url": "https://www.youtube.com/embed/TpjgD94nmPk", "titulo": "Velas de Ignição - aula 10" }
+                {
+                  "idRecurso": "VELAS_IGNICAO",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/TpjgD94nmPk",
+                  "titulo": "Velas de Ignição - aula 10"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpftk"
             },
             {
               "idAula": "M05-1-11",
@@ -746,9 +1165,15 @@
               "descricao": "Conteúdo adicional sobre injeção eletrônica.",
               "descricaoManual": "Informações complementares sobre sistemas de injeção eletrônica automotiva.",
               "recursosPrincipais": [
-                { "idRecurso": "CURSO_GRATIS", "tipo": "video", "url": "https://www.youtube.com/embed/vdfgl-InCcY", "titulo": "Curso Grátis de injeção Eletrônica - aula 11" }
+                {
+                  "idRecurso": "CURSO_GRATIS",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/vdfgl-InCcY",
+                  "titulo": "Curso Grátis de injeção Eletrônica - aula 11"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpftl"
             },
             {
               "idAula": "M05-1-12",
@@ -757,9 +1182,15 @@
               "descricao": "Fundamentos do sistema de alimentação de combustível.",
               "descricaoManual": "Como funciona o sistema de alimentação de combustível no motor.",
               "recursosPrincipais": [
-                { "idRecurso": "SISTEMA_ALIMENTACAO", "tipo": "video", "url": "https://www.youtube.com/embed/nnNl7VFbYAs", "titulo": "Introdução ao Sistema de Alimentação - aula 12" }
+                {
+                  "idRecurso": "SISTEMA_ALIMENTACAO",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/nnNl7VFbYAs",
+                  "titulo": "Introdução ao Sistema de Alimentação - aula 12"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpftm"
             },
             {
               "idAula": "M05-1-13",
@@ -768,9 +1199,15 @@
               "descricao": "Conceitos sobre TBI (Throttle Body Injection).",
               "descricaoManual": "O que é TBI, tipos principais e diferenças entre sistemas de injeção.",
               "recursosPrincipais": [
-                { "idRecurso": "TBI_TIPOS", "tipo": "video", "url": "https://www.youtube.com/embed/KN-t3xldfa8", "titulo": "O que a TBI, principais tipos e diferenças - Aula 12" }
+                {
+                  "idRecurso": "TBI_TIPOS",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/KN-t3xldfa8",
+                  "titulo": "O que a TBI, principais tipos e diferenças - Aula 12"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpftn"
             },
             {
               "idAula": "M05-1-14",
@@ -779,9 +1216,15 @@
               "descricao": "Sistema de partida a frio e enriquecimento.",
               "descricaoManual": "Como funciona o sistema de partida a frio e o enriquecimento da mistura.",
               "recursosPrincipais": [
-                { "idRecurso": "PARTIDA_FRIO", "tipo": "video", "url": "https://www.youtube.com/embed/ayNk01K8etQ", "titulo": "Como Funciona o Sistema de Partida a Frio - aula 13" }
+                {
+                  "idRecurso": "PARTIDA_FRIO",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/ayNk01K8etQ",
+                  "titulo": "Como Funciona o Sistema de Partida a Frio - aula 13"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfto"
             },
             {
               "idAula": "M05-1-15",
@@ -790,9 +1233,15 @@
               "descricao": "Técnicas para localização de sensores e atuadores.",
               "descricaoManual": "Como localizar sensores e atuadores no motor para diagnóstico e manutenção.",
               "recursosPrincipais": [
-                { "idRecurso": "LOCALIZAR_SENSORES", "tipo": "video", "url": "https://www.youtube.com/embed/x30scShqXGg", "titulo": "Aprenda a Localizar Sensores e Atuadores - aula 14" }
+                {
+                  "idRecurso": "LOCALIZAR_SENSORES",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/x30scShqXGg",
+                  "titulo": "Aprenda a Localizar Sensores e Atuadores - aula 14"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpftp"
             },
             {
               "idAula": "M05-1-16",
@@ -801,9 +1250,15 @@
               "descricao": "Sistema de códigos de falha e comunicação CAN.",
               "descricaoManual": "Como interpretar códigos de falha e funcionamento da rede CAN no veículo.",
               "recursosPrincipais": [
-                { "idRecurso": "CODIGOS_FALHAS_CAN", "tipo": "video", "url": "https://www.youtube.com/embed/4CnUub8Y2Lg", "titulo": "Código de falhas e rede CAN - Aula 15" }
+                {
+                  "idRecurso": "CODIGOS_FALHAS_CAN",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/4CnUub8Y2Lg",
+                  "titulo": "Código de falhas e rede CAN - Aula 15"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpftq"
             },
             {
               "idAula": "M05-1-17",
@@ -812,9 +1267,15 @@
               "descricao": "Construção de cabos para osciloscópio.",
               "descricaoManual": "Como fazer cabos personalizados para uso com osciloscópio automotivo.",
               "recursosPrincipais": [
-                { "idRecurso": "CABOS_OSCILOSCOPIO", "tipo": "video", "url": "https://www.youtube.com/embed/YLMvIEEzyNk", "titulo": "Como fazer os cabos do osciloscópio - Aula extra 1" }
+                {
+                  "idRecurso": "CABOS_OSCILOSCOPIO",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/YLMvIEEzyNk",
+                  "titulo": "Como fazer os cabos do osciloscópio - Aula extra 1"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpftr"
             },
             {
               "idAula": "M05-1-18",
@@ -823,9 +1284,15 @@
               "descricao": "Osciloscópio automotivo e acessórios essenciais.",
               "descricaoManual": "Principais acessórios e equipamentos para uso do osciloscópio em diagnóstico automotivo.",
               "recursosPrincipais": [
-                { "idRecurso": "OSCILOSCOPIO_ACESSORIOS", "tipo": "video", "url": "https://www.youtube.com/embed/CTkJKGxVOU8", "titulo": "Osciloscópio e principais acessórios - Aula extra 2" }
+                {
+                  "idRecurso": "OSCILOSCOPIO_ACESSORIOS",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/CTkJKGxVOU8",
+                  "titulo": "Osciloscópio e principais acessórios - Aula extra 2"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfts"
             },
             {
               "idAula": "M05-1-19",
@@ -834,9 +1301,15 @@
               "descricao": "Vantagens do osciloscópio portátil.",
               "descricaoManual": "Por que usar osciloscópio portátil em diagnósticos automotivos e suas vantagens.",
               "recursosPrincipais": [
-                { "idRecurso": "OSCILOSCOPIO_PORTATIL", "tipo": "video", "url": "https://www.youtube.com/embed/VHZG70GrNpc", "titulo": "Porque Utilizo Osciloscópio Portátil - - Aula extra 3" }
+                {
+                  "idRecurso": "OSCILOSCOPIO_PORTATIL",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/VHZG70GrNpc",
+                  "titulo": "Porque Utilizo Osciloscópio Portátil - - Aula extra 3"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpftt"
             },
             {
               "idAula": "M05-1-20",
@@ -845,9 +1318,15 @@
               "descricao": "Uso do scanner automotivo e suas funcionalidades.",
               "descricaoManual": "Como utilizar scanner automotivo com todas suas funcionalidades para diagnóstico.",
               "recursosPrincipais": [
-                { "idRecurso": "SCANNER_FUNCIONALIDADES", "tipo": "video", "url": "https://www.youtube.com/embed/FzOAQ8KtMKw", "titulo": "Diagnóstico com Scanner e Funcionalidades - Aula 16" }
+                {
+                  "idRecurso": "SCANNER_FUNCIONALIDADES",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/FzOAQ8KtMKw",
+                  "titulo": "Diagnóstico com Scanner e Funcionalidades - Aula 16"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpftu"
             },
             {
               "idAula": "M05-1-21",
@@ -856,15 +1335,22 @@
               "descricao": "Diagnóstico de falhas no sincronismo de válvulas.",
               "descricaoManual": "Como identificar e diagnosticar problemas de sincronismo de válvulas no motor.",
               "recursosPrincipais": [
-                { "idRecurso": "FALHA_SINCRONISMO", "tipo": "video", "url": "https://www.youtube.com/embed/6f5MEB4lvgA", "titulo": "Causas e Diagnostico de falha de Sincronismo de Válvulas - Aula 17" }
+                {
+                  "idRecurso": "FALHA_SINCRONISMO",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/6f5MEB4lvgA",
+                  "titulo": "Causas e Diagnostico de falha de Sincronismo de Válvulas - Aula 17"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpftv"
             }
-          ]
+          ],
+          "idUnico": "mat_1760840618638_m53rpfta"
         }
-      ]
+      ],
+      "idUnico": "mod_1760840618638_m53rpft9"
     },
-
     {
       "idModulo": "M06",
       "numeroModulo": 6,
@@ -883,9 +1369,15 @@
               "descricao": "Metodologia sistemática para diagnóstico automotivo.",
               "descricaoManual": "Passo a passo do diagnóstico: verificação inicial, identificação do problema, testes e solução.",
               "recursosPrincipais": [
-                { "idRecurso": "ROTEIRO_DIAGNOSTICO", "tipo": "video", "url": "https://www.youtube.com/embed/vAi9n9_hrAU", "titulo": "Roteiro de diagnóstico" }
+                {
+                  "idRecurso": "ROTEIRO_DIAGNOSTICO",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/vAi9n9_hrAU",
+                  "titulo": "Roteiro de diagnóstico"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfty"
             },
             {
               "idAula": "M06-1-2",
@@ -894,9 +1386,15 @@
               "descricao": "Técnicas de diagnóstico usando apenas multímetro.",
               "descricaoManual": "Como realizar diagnósticos eficazes utilizando apenas um multímetro digital para identificar problemas elétricos.",
               "recursosPrincipais": [
-                { "idRecurso": "DIAGNOSTICO_MULTIMETRO", "tipo": "video", "url": "https://www.youtube.com/embed/J_0ndfHI_K4", "titulo": "Diagnóstico apenas com multímetro" }
+                {
+                  "idRecurso": "DIAGNOSTICO_MULTIMETRO",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/J_0ndfHI_K4",
+                  "titulo": "Diagnóstico apenas com multímetro"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpftz"
             },
             {
               "idAula": "M06-1-3",
@@ -905,9 +1403,15 @@
               "descricao": "Comparativo entre diferentes tipos de scanners automotivos.",
               "descricaoManual": "Análise das principais diferenças entre scanners OBD-II, multissistemas e scanners profissionais, suas funcionalidades e aplicações.",
               "recursosPrincipais": [
-                { "idRecurso": "DIFERENCAS_SCANNERS", "tipo": "video", "url": "https://www.youtube.com/embed/oKAV87LbPmg", "titulo": "Diferenças dos scanners automotivos" }
+                {
+                  "idRecurso": "DIFERENCAS_SCANNERS",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/oKAV87LbPmg",
+                  "titulo": "Diferenças dos scanners automotivos"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfu0"
             },
             {
               "idAula": "M06-1-4",
@@ -916,11 +1420,18 @@
               "descricao": "Técnicas para identificar curtos-circuitos na ECU.",
               "descricaoManual": "Metodologia para localizar e diagnosticar curtos-circuitos na Unidade de Controle Eletrônico (ECU) através de testes específicos e procedimentos adequados.",
               "recursosPrincipais": [
-                { "idRecurso": "CURTO_ECU", "tipo": "video", "url": "https://www.youtube.com/embed/sPInutAEuLY", "titulo": "Como identificar curto no módulo ECU" }
+                {
+                  "idRecurso": "CURTO_ECU",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/sPInutAEuLY",
+                  "titulo": "Como identificar curto no módulo ECU"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfu1"
             }
-          ]
+          ],
+          "idUnico": "mat_1760840618638_m53rpftx"
         },
         {
           "idMateria": "M06-2",
@@ -934,9 +1445,15 @@
               "descricao": "Introdução ao curso gratuito de osciloscópio automotivo.",
               "descricaoManual": "Primeira aula do curso gratuito sobre osciloscópio, apresentando os conceitos básicos e fundamentos do equipamento.",
               "recursosPrincipais": [
-                { "idRecurso": "OSCILOSCOPIO_AULA1", "tipo": "video", "url": "https://www.youtube.com/embed/ANpUrSlSxFU", "titulo": "CURSO GRATUITO DE OSCILOSCÓPIO - AULA 1" }
+                {
+                  "idRecurso": "OSCILOSCOPIO_AULA1",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/ANpUrSlSxFU",
+                  "titulo": "CURSO GRATUITO DE OSCILOSCÓPIO - AULA 1"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfu3"
             },
             {
               "idAula": "M06-2-2",
@@ -945,9 +1462,15 @@
               "descricao": "Continuação do curso gratuito de osciloscópio automotivo.",
               "descricaoManual": "Segunda aula do curso, aprofundando os conhecimentos sobre uso do osciloscópio em diagnóstico automotivo.",
               "recursosPrincipais": [
-                { "idRecurso": "OSCILOSCOPIO_AULA2", "tipo": "video", "url": "https://www.youtube.com/embed/5Wc3gDAUq34", "titulo": "CURSO GRATUITO DE OSCILOSCÓPIO - AULA 2" }
+                {
+                  "idRecurso": "OSCILOSCOPIO_AULA2",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/5Wc3gDAUq34",
+                  "titulo": "CURSO GRATUITO DE OSCILOSCÓPIO - AULA 2"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfu4"
             },
             {
               "idAula": "M06-2-3",
@@ -956,9 +1479,15 @@
               "descricao": "Terceira aula do curso gratuito de osciloscópio.",
               "descricaoManual": "Aprofundamento dos conceitos e técnicas práticas de uso do osciloscópio para diagnóstico automotivo.",
               "recursosPrincipais": [
-                { "idRecurso": "OSCILOSCOPIO_AULA3", "tipo": "video", "url": "https://www.youtube.com/embed/GiaFSVbkgmI", "titulo": "CURSO GRATUITO DE OSCILOSCÓPIO - AULA 3" }
+                {
+                  "idRecurso": "OSCILOSCOPIO_AULA3",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/GiaFSVbkgmI",
+                  "titulo": "CURSO GRATUITO DE OSCILOSCÓPIO - AULA 3"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfu5"
             },
             {
               "idAula": "M06-2-4",
@@ -967,9 +1496,15 @@
               "descricao": "Quarta aula do curso gratuito de osciloscópio.",
               "descricaoManual": "Técnicas avançadas e casos práticos de diagnóstico utilizando osciloscópio automotivo.",
               "recursosPrincipais": [
-                { "idRecurso": "OSCILOSCOPIO_AULA4", "tipo": "video", "url": "https://www.youtube.com/embed/OYt5BhVw4TE", "titulo": "CURSO GRATUITO DE OSCILOSCÓPIO - AULA 4" }
+                {
+                  "idRecurso": "OSCILOSCOPIO_AULA4",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/OYt5BhVw4TE",
+                  "titulo": "CURSO GRATUITO DE OSCILOSCÓPIO - AULA 4"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfu6"
             },
             {
               "idAula": "M06-2-5",
@@ -978,9 +1513,15 @@
               "descricao": "Quinta aula do curso gratuito de osciloscópio.",
               "descricaoManual": "Finalização do curso com técnicas especializadas e interpretação de resultados no osciloscópio.",
               "recursosPrincipais": [
-                { "idRecurso": "OSCILOSCOPIO_AULA5", "tipo": "video", "url": "https://www.youtube.com/embed/JFxfSvrFDnY", "titulo": "CURSO GRATUITO DE OSCILOSCÓPIO - AULA 5" }
+                {
+                  "idRecurso": "OSCILOSCOPIO_AULA5",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/JFxfSvrFDnY",
+                  "titulo": "CURSO GRATUITO DE OSCILOSCÓPIO - AULA 5"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfu7"
             },
             {
               "idAula": "M06-2-6",
@@ -989,11 +1530,18 @@
               "descricao": "Como funciona o osciloscópio - princípios de funcionamento.",
               "descricaoManual": "Explicação detalhada sobre o funcionamento interno do osciloscópio e seus princípios básicos de operação.",
               "recursosPrincipais": [
-                { "idRecurso": "OSCILOSCOPIO_FUNCIONAMENTO", "tipo": "video", "url": "https://www.youtube.com/embed/q29k5lH6NBQ", "titulo": "A Verdade Sobre o Osciloscópio - Aula 2 - Como funciona o osciloscópio" }
+                {
+                  "idRecurso": "OSCILOSCOPIO_FUNCIONAMENTO",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/q29k5lH6NBQ",
+                  "titulo": "A Verdade Sobre o Osciloscópio - Aula 2 - Como funciona o osciloscópio"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfu8"
             }
-          ]
+          ],
+          "idUnico": "mat_1760840618638_m53rpfu2"
         },
         {
           "idMateria": "M06-3",
@@ -1007,9 +1555,15 @@
               "descricao": "Introdução e primeiros passos no uso do osciloscópio.",
               "descricaoManual": "Fundamentos básicos para começar a usar o osciloscópio automotivo com segurança e eficiência.",
               "recursosPrincipais": [
-                { "idRecurso": "PRIMEIROS_PASSOS", "tipo": "video", "url": "https://www.youtube.com/embed/ftzU-oKy5XE", "titulo": "Primeiros Passos - Aula 1" }
+                {
+                  "idRecurso": "PRIMEIROS_PASSOS",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/ftzU-oKy5XE",
+                  "titulo": "Primeiros Passos - Aula 1"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfua"
             },
             {
               "idAula": "M06-3-2",
@@ -1018,9 +1572,15 @@
               "descricao": "Como coletar o primeiro sinal com o osciloscópio.",
               "descricaoManual": "Técnicas práticas para coletar e visualizar o primeiro sinal no osciloscópio automotivo.",
               "recursosPrincipais": [
-                { "idRecurso": "COLETANDO_SINAL", "tipo": "video", "url": "https://www.youtube.com/embed/WK6g0FU6EwA", "titulo": "Coletando o primeiro sinal - Aula 2" }
+                {
+                  "idRecurso": "COLETANDO_SINAL",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/WK6g0FU6EwA",
+                  "titulo": "Coletando o primeiro sinal - Aula 2"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfub"
             },
             {
               "idAula": "M06-3-3",
@@ -1029,9 +1589,15 @@
               "descricao": "Segredos e técnicas para capturar formas de onda eficientemente.",
               "descricaoManual": "Conheça os segredos para capturar formas de onda corretamente e interpretar os sinais automotivos.",
               "recursosPrincipais": [
-                { "idRecurso": "FORMAS_ONDA", "tipo": "video", "url": "https://www.youtube.com/embed/vazc631XWZw", "titulo": "Formas de Onda: Segredos para Captar o Sinal - Aula 3" }
+                {
+                  "idRecurso": "FORMAS_ONDA",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/vazc631XWZw",
+                  "titulo": "Formas de Onda: Segredos para Captar o Sinal - Aula 3"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfuc"
             },
             {
               "idAula": "M06-3-4",
@@ -1040,9 +1606,15 @@
               "descricao": "Características técnicas dos equipamentos de osciloscópio.",
               "descricaoManual": "Entenda as características técnicas dos equipamentos de osciloscópio para melhor escolha e utilização.",
               "recursosPrincipais": [
-                { "idRecurso": "CARACTERISTICAS_EQUIPAMENTOS", "tipo": "video", "url": "https://www.youtube.com/embed/OwsA68F5wEk", "titulo": "Características Técnicas dos Equipamentos - Aula 4" }
+                {
+                  "idRecurso": "CARACTERISTICAS_EQUIPAMENTOS",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/OwsA68F5wEk",
+                  "titulo": "Características Técnicas dos Equipamentos - Aula 4"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfud"
             },
             {
               "idAula": "M06-3-5",
@@ -1051,15 +1623,22 @@
               "descricao": "Aplicação prática do osciloscópio em testes de sensores.",
               "descricaoManual": "Testes práticos utilizando o osciloscópio para diagnosticar e testar sensores automotivos.",
               "recursosPrincipais": [
-                { "idRecurso": "TESTES_SENSORES", "tipo": "video", "url": "https://www.youtube.com/embed/dLtTW7fONDE", "titulo": "Testes Práticos em Sensores - Aula 5" }
+                {
+                  "idRecurso": "TESTES_SENSORES",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/dLtTW7fONDE",
+                  "titulo": "Testes Práticos em Sensores - Aula 5"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfue"
             }
-          ]
+          ],
+          "idUnico": "mat_1760840618638_m53rpfu9"
         }
-      ]
+      ],
+      "idUnico": "mod_1760840618638_m53rpftw"
     },
-
     {
       "idModulo": "M08",
       "numeroModulo": 8,
@@ -1078,9 +1657,15 @@
               "descricao": "Funcionamento e diagnóstico do airbag.",
               "descricaoManual": "Sensores de impacto, central de airbag, circuito dos airbags e procedimentos de segurança.",
               "recursosPrincipais": [
-                { "idRecurso": "AIRBAG", "tipo": "video", "url": "https://www.youtube.com/embed/M3cxkg3y3os", "titulo": "Sistema de Airbag" }
+                {
+                  "idRecurso": "AIRBAG",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/M3cxkg3y3os",
+                  "titulo": "Sistema de Airbag"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfuh"
             },
             {
               "idAula": "M07-1-2",
@@ -1089,9 +1674,15 @@
               "descricao": "Sistemas de segurança ativa.",
               "descricaoManual": "ABS (freios), ASR (tração), ESP (estabilidade) - funcionamento e diagnóstico.",
               "recursosPrincipais": [
-                { "idRecurso": "ABS_ESP", "tipo": "video", "url": "https://www.youtube.com/embed/PxTbwHhdXZo", "titulo": "Manual SAS - ABS/ASR/ESP" }
+                {
+                  "idRecurso": "ABS_ESP",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/PxTbwHhdXZo",
+                  "titulo": "Manual SAS - ABS/ASR/ESP"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfui"
             },
             {
               "idAula": "M07-1-3",
@@ -1100,11 +1691,18 @@
               "descricao": "Sistema antifurto eletrônico.",
               "descricaoManual": "Transponder, codificação de chaves, comunicação com ECU e solução de problemas.",
               "recursosPrincipais": [
-                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+                {
+                  "idRecurso": "MEME",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                  "titulo": "(temporário) Player da aula"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfuj"
             }
-          ]
+          ],
+          "idUnico": "mat_1760840618638_m53rpfug"
         },
         {
           "idMateria": "M07-2",
@@ -1118,9 +1716,15 @@
               "descricao": "Sistema de climatização automotiva.",
               "descricaoManual": "Compressor, sensores, válvulas e diagnóstico elétrico do sistema de A/C.",
               "recursosPrincipais": [
-                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+                {
+                  "idRecurso": "MEME",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                  "titulo": "(temporário) Player da aula"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpful"
             },
             {
               "idAula": "M07-2-2",
@@ -1129,9 +1733,15 @@
               "descricao": "Body Control Module e painel de instrumentos.",
               "descricaoManual": "Central de carroceria, comunicação com módulos, falhas comuns e reprogramação.",
               "recursosPrincipais": [
-                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+                {
+                  "idRecurso": "MEME",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                  "titulo": "(temporário) Player da aula"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfum"
             },
             {
               "idAula": "M07-2-3",
@@ -1140,11 +1750,18 @@
               "descricao": "Circuitos de conforto e conveniência.",
               "descricaoManual": "Sistema de iluminação, travas elétricas, vidros e diagnóstico de circuitos.",
               "recursosPrincipais": [
-                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+                {
+                  "idRecurso": "MEME",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                  "titulo": "(temporário) Player da aula"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfun"
             }
-          ]
+          ],
+          "idUnico": "mat_1760840618638_m53rpfuk"
         },
         {
           "idMateria": "M07-3",
@@ -1158,9 +1775,15 @@
               "descricao": "Tecnologia de injeção direta de combustível.",
               "descricaoManual": "Diferenças da injeção indireta, bomba de alta pressão, bicos piezoelétricos.",
               "recursosPrincipais": [
-                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+                {
+                  "idRecurso": "MEME",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                  "titulo": "(temporário) Player da aula"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfup"
             },
             {
               "idAula": "M07-3-2",
@@ -1169,9 +1792,15 @@
               "descricao": "Gerenciamento inteligente de energia.",
               "descricaoManual": "Controle PWM do alternador, sistema start-stop e gerenciamento de bateria.",
               "recursosPrincipais": [
-                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+                {
+                  "idRecurso": "MEME",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                  "titulo": "(temporário) Player da aula"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfuq"
             },
             {
               "idAula": "M07-3-3",
@@ -1180,15 +1809,22 @@
               "descricao": "Veículos eletrificados.",
               "descricaoManual": "Arquitetura de veículos híbridos e elétricos, baterias de alta tensão e segurança.",
               "recursosPrincipais": [
-                { "idRecurso": "MEME", "tipo": "video", "url": "https://www.youtube.com/embed/dQw4w9WgXcQ", "titulo": "(temporário) Player da aula" }
+                {
+                  "idRecurso": "MEME",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                  "titulo": "(temporário) Player da aula"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfur"
             }
-          ]
+          ],
+          "idUnico": "mat_1760840618638_m53rpfuo"
         }
-      ]
+      ],
+      "idUnico": "mod_1760840618638_m53rpfuf"
     },
-
     {
       "idModulo": "M07",
       "numeroModulo": 7,
@@ -1207,9 +1843,15 @@
               "descricao": "Funcionamento e parâmetros da eletroválvula de purga do canister.",
               "descricaoManual": "Como interpretar os parâmetros da eletroválvula de purga do sistema de canister no scanner.",
               "recursosPrincipais": [
-                { "idRecurso": "CANP_PARAMETROS", "tipo": "video", "url": "https://www.youtube.com/embed/BkaRgAtod-4", "titulo": "SP: Eletroválvula de Purga do Canister/CANP" }
+                {
+                  "idRecurso": "CANP_PARAMETROS",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/BkaRgAtod-4",
+                  "titulo": "SP: Eletroválvula de Purga do Canister/CANP"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfuu"
             },
             {
               "idAula": "M07-1-2",
@@ -1218,9 +1860,15 @@
               "descricao": "Parâmetros do sensor de posição do pedal do acelerador.",
               "descricaoManual": "Interpretação dos parâmetros do pedal do acelerador através do scanner Rasther Android.",
               "recursosPrincipais": [
-                { "idRecurso": "PEDAL_ACELERADOR", "tipo": "video", "url": "https://www.youtube.com/embed/0jdDOmU8fW4", "titulo": "SP: Rasther Android - Parâmetros do Pedal do Acelerador" }
+                {
+                  "idRecurso": "PEDAL_ACELERADOR",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/0jdDOmU8fW4",
+                  "titulo": "SP: Rasther Android - Parâmetros do Pedal do Acelerador"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfuv"
             },
             {
               "idAula": "M07-1-3",
@@ -1229,9 +1877,15 @@
               "descricao": "Relação entre MAP e TPS, parâmetros em marcha lenta.",
               "descricaoManual": "Análise da relação entre pressão do coletor (MAP) e posição da borboleta (TPS) durante marcha lenta.",
               "recursosPrincipais": [
-                { "idRecurso": "MAP_TPS_RELACAO", "tipo": "video", "url": "https://www.youtube.com/embed/lp8dE5LUdvE", "titulo": "SP: Relação MAP x TPS & MAP em Marcha Lenta" }
+                {
+                  "idRecurso": "MAP_TPS_RELACAO",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/lp8dE5LUdvE",
+                  "titulo": "SP: Relação MAP x TPS & MAP em Marcha Lenta"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfuw"
             },
             {
               "idAula": "M07-1-4",
@@ -1240,9 +1894,15 @@
               "descricao": "Fator lambda e ajuste de curto prazo do combustível.",
               "descricaoManual": "Como interpretar o fator lambda e os ajustes de curto prazo (STFT) no scanner.",
               "recursosPrincipais": [
-                { "idRecurso": "LAMBDA_STFT", "tipo": "video", "url": "https://www.youtube.com/embed/slukEMeabls", "titulo": "SP: Fator Lambda (Ajuste de Curto Prazo - STFT)" }
+                {
+                  "idRecurso": "LAMBDA_STFT",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/slukEMeabls",
+                  "titulo": "SP: Fator Lambda (Ajuste de Curto Prazo - STFT)"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfux"
             },
             {
               "idAula": "M07-1-5",
@@ -1251,9 +1911,15 @@
               "descricao": "Parâmetros de avanço de ignição no scanner.",
               "descricaoManual": "Como analisar os parâmetros de avanço de ignição através do scanner automotivo.",
               "recursosPrincipais": [
-                { "idRecurso": "AVANCO_IGNICAO", "tipo": "video", "url": "https://www.youtube.com/embed/wRo1JdPdZGg", "titulo": "SP: Avanço de Ignição" }
+                {
+                  "idRecurso": "AVANCO_IGNICAO",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/wRo1JdPdZGg",
+                  "titulo": "SP: Avanço de Ignição"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfuy"
             },
             {
               "idAula": "M07-1-6",
@@ -1262,9 +1928,15 @@
               "descricao": "Parâmetros do sensor IAT parte 2.",
               "descricaoManual": "Segunda parte da análise dos parâmetros do sensor de temperatura do ar admitido (IAT).",
               "recursosPrincipais": [
-                { "idRecurso": "IAT_P2", "tipo": "video", "url": "https://www.youtube.com/embed/YlDcrAKIIYI", "titulo": "SP: Sensor de Temperatura do Ar/IAT (Intake Air Temperature) – P2" }
+                {
+                  "idRecurso": "IAT_P2",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/YlDcrAKIIYI",
+                  "titulo": "SP: Sensor de Temperatura do Ar/IAT (Intake Air Temperature) – P2"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfuz"
             },
             {
               "idAula": "M07-1-7",
@@ -1273,9 +1945,15 @@
               "descricao": "Parâmetros do sensor IAT parte 1.",
               "descricaoManual": "Primeira parte da análise dos parâmetros do sensor de temperatura do ar admitido (IAT).",
               "recursosPrincipais": [
-                { "idRecurso": "IAT_P1", "tipo": "video", "url": "https://www.youtube.com/embed/ZZrHKFOABIM", "titulo": "SP: Sensor de Temperatura do Ar/IAT (Intake Air Temperature) - P1" }
+                {
+                  "idRecurso": "IAT_P1",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/ZZrHKFOABIM",
+                  "titulo": "SP: Sensor de Temperatura do Ar/IAT (Intake Air Temperature) - P1"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfv0"
             },
             {
               "idAula": "M07-1-8",
@@ -1284,9 +1962,15 @@
               "descricao": "Função barométrica do sensor MAP.",
               "descricaoManual": "Como interpretar a função barométrica do sensor MAP no scanner automotivo.",
               "recursosPrincipais": [
-                { "idRecurso": "MAP_BAROMETRICA", "tipo": "video", "url": "https://www.youtube.com/embed/SuAkejnewCQ", "titulo": "SP: MAP Função Barométrica" }
+                {
+                  "idRecurso": "MAP_BAROMETRICA",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/SuAkejnewCQ",
+                  "titulo": "SP: MAP Função Barométrica"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfv1"
             },
             {
               "idAula": "M07-1-9",
@@ -1295,9 +1979,15 @@
               "descricao": "Sensor de posição do pedal do acelerador APP.",
               "descricaoManual": "Parâmetros e características do sensor de posição do pedal do acelerador (APP) no scanner.",
               "recursosPrincipais": [
-                { "idRecurso": "APP_SENSOR", "tipo": "video", "url": "https://www.youtube.com/embed/pbKBx3Hx_JQ", "titulo": "Sensor do Pedal do Acelerador - Accelerator Pedal Position/APP)" }
+                {
+                  "idRecurso": "APP_SENSOR",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/pbKBx3Hx_JQ",
+                  "titulo": "Sensor do Pedal do Acelerador - Accelerator Pedal Position/APP)"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfv2"
             },
             {
               "idAula": "M07-1-10",
@@ -1306,9 +1996,15 @@
               "descricao": "Duty cycle do sistema TBI e regulação da borboleta.",
               "descricaoManual": "Como interpretar o duty cycle do TBI e os valores de regulação da borboleta no scanner.",
               "recursosPrincipais": [
-                { "idRecurso": "TBI_DUTY_CYCLE", "tipo": "video", "url": "https://www.youtube.com/embed/fSpw_9o8D_Y", "titulo": "SP: Duty Cycle do TBI (Valor de Regulação da Borboleta)" }
+                {
+                  "idRecurso": "TBI_DUTY_CYCLE",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/fSpw_9o8D_Y",
+                  "titulo": "SP: Duty Cycle do TBI (Valor de Regulação da Borboleta)"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfv3"
             },
             {
               "idAula": "M07-1-11",
@@ -1317,9 +2013,15 @@
               "descricao": "Parâmetros de tensão de alimentação do sistema.",
               "descricaoManual": "Como analisar os parâmetros de tensão de alimentação através do scanner automotivo.",
               "recursosPrincipais": [
-                { "idRecurso": "TENSAO_ALIMENTACAO", "tipo": "video", "url": "https://www.youtube.com/embed/MVM6giZU_S8", "titulo": "Série Parâmetros: Tensão de Alimentação" }
+                {
+                  "idRecurso": "TENSAO_ALIMENTACAO",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/MVM6giZU_S8",
+                  "titulo": "Série Parâmetros: Tensão de Alimentação"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfv4"
             },
             {
               "idAula": "M07-1-12",
@@ -1328,9 +2030,15 @@
               "descricao": "Monitoramento do sistema de cânister via OBD-2.",
               "descricaoManual": "Como interpretar os parâmetros de monitoramento do sistema de cânister através do protocolo OBD-2.",
               "recursosPrincipais": [
-                { "idRecurso": "CANISTER_OBD2", "tipo": "video", "url": "https://www.youtube.com/embed/G_Fz021ndtk", "titulo": "OBD-2: Monitoramento do Cânister" }
+                {
+                  "idRecurso": "CANISTER_OBD2",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/G_Fz021ndtk",
+                  "titulo": "OBD-2: Monitoramento do Cânister"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfv5"
             },
             {
               "idAula": "M07-1-13",
@@ -1339,9 +2047,15 @@
               "descricao": "Parâmetros relacionados a falhas de ignição e misfire.",
               "descricaoManual": "Como identificar e interpretar parâmetros relacionados a falhas de ignição (misfire) no scanner.",
               "recursosPrincipais": [
-                { "idRecurso": "MISFIRE_PARAMETROS", "tipo": "video", "url": "https://www.youtube.com/embed/zhszfXwqyoA", "titulo": "CURSO ONLINE DE INJEÇÃO ELETRÔNICA | FALHA DE IGNIÇÃO/MISFIRE" }
+                {
+                  "idRecurso": "MISFIRE_PARAMETROS",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/zhszfXwqyoA",
+                  "titulo": "CURSO ONLINE DE INJEÇÃO ELETRÔNICA | FALHA DE IGNIÇÃO/MISFIRE"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfv6"
             },
             {
               "idAula": "M07-1-14",
@@ -1350,9 +2064,15 @@
               "descricao": "Parâmetros de diagnóstico da bomba de combustível sob demanda.",
               "descricaoManual": "Como analisar os parâmetros da bomba de combustível sob demanda através do scanner.",
               "recursosPrincipais": [
-                { "idRecurso": "BOMBA_COMBUSTIVEL", "tipo": "video", "url": "https://www.youtube.com/embed/sFXraEcxzhY", "titulo": "DIAGNÓSTICO DA BOMBA DE COMBUSTÍVELSOB DEMANDA" }
+                {
+                  "idRecurso": "BOMBA_COMBUSTIVEL",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/sFXraEcxzhY",
+                  "titulo": "DIAGNÓSTICO DA BOMBA DE COMBUSTÍVELSOB DEMANDA"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfv7"
             },
             {
               "idAula": "M07-1-15",
@@ -1361,9 +2081,15 @@
               "descricao": "Parâmetros da sonda lambda e mistura pobre.",
               "descricaoManual": "Como interpretar os parâmetros da sonda lambda relacionados a mistura pobre no scanner.",
               "recursosPrincipais": [
-                { "idRecurso": "SONDA_LAMBDA_POBRE", "tipo": "video", "url": "https://www.youtube.com/embed/cOR4dIBaaAw", "titulo": "SONDA LAMBDA | MISTURA POBRE" }
+                {
+                  "idRecurso": "SONDA_LAMBDA_POBRE",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/cOR4dIBaaAw",
+                  "titulo": "SONDA LAMBDA | MISTURA POBRE"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfv8"
             },
             {
               "idAula": "M07-1-16",
@@ -1372,9 +2098,15 @@
               "descricao": "Parâmetros dos sensores progressivos do sistema TBI.",
               "descricaoManual": "Dica técnica sobre como interpretar os parâmetros dos sensores progressivos do TBI no scanner.",
               "recursosPrincipais": [
-                { "idRecurso": "TBI_SENSORES", "tipo": "video", "url": "https://www.youtube.com/embed/1oX3uQSY7WE", "titulo": "DICA TÉCNICA | SENSORES PROGRESSIVOS DO TBI" }
+                {
+                  "idRecurso": "TBI_SENSORES",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/1oX3uQSY7WE",
+                  "titulo": "DICA TÉCNICA | SENSORES PROGRESSIVOS DO TBI"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfv9"
             },
             {
               "idAula": "M07-1-17",
@@ -1383,9 +2115,15 @@
               "descricao": "Parâmetros relacionados ao código P0420 de baixa eficiência do catalisador.",
               "descricaoManual": "Dica sobre como interpretar parâmetros relacionados ao código P0420 de baixa eficiência do catalisador.",
               "recursosPrincipais": [
-                { "idRecurso": "P0420_CATALISADOR", "tipo": "video", "url": "https://www.youtube.com/embed/iGoQdDfeOzQ", "titulo": "DICA | P0420 BAIXA EFICÊNCIA DO CATALISADOR" }
+                {
+                  "idRecurso": "P0420_CATALISADOR",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/iGoQdDfeOzQ",
+                  "titulo": "DICA | P0420 BAIXA EFICÊNCIA DO CATALISADOR"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfva"
             },
             {
               "idAula": "M07-1-18",
@@ -1394,15 +2132,22 @@
               "descricao": "Classes e categorias dos sensores automotivos e seus parâmetros.",
               "descricaoManual": "Introdução às diferentes classes de sensores automotivos e como interpretar seus parâmetros no scanner.",
               "recursosPrincipais": [
-                { "idRecurso": "CLASSES_SENSORES", "tipo": "video", "url": "https://www.youtube.com/embed/qg4BT_uO_XQ", "titulo": "SENSORES AUTOMOTIVOS | CONHEÇA AS CLASSES DOS SENSORES" }
+                {
+                  "idRecurso": "CLASSES_SENSORES",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/qg4BT_uO_XQ",
+                  "titulo": "SENSORES AUTOMOTIVOS | CONHEÇA AS CLASSES DOS SENSORES"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfvb"
             }
-          ]
+          ],
+          "idUnico": "mat_1760840618638_m53rpfut"
         }
-      ]
+      ],
+      "idUnico": "mod_1760840618638_m53rpfus"
     },
-
     {
       "idModulo": "M09",
       "numeroModulo": 9,
@@ -1421,9 +2166,15 @@
               "descricao": "Fundamentos básicos para começar a usar o osciloscópio em diagnóstico automotivo.",
               "descricaoManual": "Introdução ao curso de osciloscópio, conceitos fundamentais e primeiros passos para diagnóstico automotivo.",
               "recursosPrincipais": [
-                { "idRecurso": "PRIMEIROS_PASSOS_BASICO", "tipo": "video", "url": "https://www.youtube.com/embed/kDazv-4Lyt4", "titulo": "Curso Osciloscópio - Os primeiros passos - Nível Básico" }
+                {
+                  "idRecurso": "PRIMEIROS_PASSOS_BASICO",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/kDazv-4Lyt4",
+                  "titulo": "Curso Osciloscópio - Os primeiros passos - Nível Básico"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfve"
             },
             {
               "idAula": "M09-1-2",
@@ -1432,9 +2183,15 @@
               "descricao": "Tipos de ondas elétricas, calibração do osciloscópio e configuração de acoplamento.",
               "descricaoManual": "Aprenda a identificar diferentes tipos de ondas, calibrar o osciloscópio e usar os acopladores DC e AC adequadamente.",
               "recursosPrincipais": [
-                { "idRecurso": "TIPOS_ONDA_CALIBRACAO", "tipo": "video", "url": "https://www.youtube.com/embed/D4qAjCC64KE", "titulo": "Curso de Osciloscópio - Tipos de onda, Calibração e Acoplador DC e AC" }
+                {
+                  "idRecurso": "TIPOS_ONDA_CALIBRACAO",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/D4qAjCC64KE",
+                  "titulo": "Curso de Osciloscópio - Tipos de onda, Calibração e Acoplador DC e AC"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfvf"
             },
             {
               "idAula": "M09-1-3",
@@ -1443,9 +2200,15 @@
               "descricao": "Configuração e ajuste do eixo horizontal (tempo) no osciloscópio.",
               "descricaoManual": "Como utilizar e ajustar o eixo horizontal do osciloscópio para uma visualização precisa dos sinais temporais.",
               "recursosPrincipais": [
-                { "idRecurso": "EIXO_HORIZONTAL", "tipo": "video", "url": "https://www.youtube.com/embed/xJ1sN6yKwZQ", "titulo": "Curso de Osciloscópio - Eixo Horizontal e Ajuste" }
+                {
+                  "idRecurso": "EIXO_HORIZONTAL",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/xJ1sN6yKwZQ",
+                  "titulo": "Curso de Osciloscópio - Eixo Horizontal e Ajuste"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfvg"
             },
             {
               "idAula": "M09-1-4",
@@ -1454,9 +2217,15 @@
               "descricao": "Configuração e ajuste do eixo vertical (amplitude) no osciloscópio.",
               "descricaoManual": "Aprenda a configurar o eixo vertical do osciloscópio para medir amplitudes corretas dos sinais automotivos.",
               "recursosPrincipais": [
-                { "idRecurso": "EIXO_VERTICAL", "tipo": "video", "url": "https://www.youtube.com/embed/-cwt6LWCsjA", "titulo": "Curso de Osciloscópio - Eixo Vertical e Ajuste" }
+                {
+                  "idRecurso": "EIXO_VERTICAL",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/-cwt6LWCsjA",
+                  "titulo": "Curso de Osciloscópio - Eixo Vertical e Ajuste"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfvh"
             },
             {
               "idAula": "M09-1-5",
@@ -1465,9 +2234,15 @@
               "descricao": "Sistema de trigger automático e configuração da direção de disparo.",
               "descricaoManual": "Como usar o sistema de trigger automático, ajustar os parâmetros e configurar a direção de disparo para capturar sinais estáveis.",
               "recursosPrincipais": [
-                { "idRecurso": "TRIGGER_AUTO", "tipo": "video", "url": "https://www.youtube.com/embed/ZxbLy6A8pjI", "titulo": "Curso de Osciloscópio - Trigger auto, Ajuste e Direção de disparo" }
+                {
+                  "idRecurso": "TRIGGER_AUTO",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/ZxbLy6A8pjI",
+                  "titulo": "Curso de Osciloscópio - Trigger auto, Ajuste e Direção de disparo"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfvi"
             },
             {
               "idAula": "M09-1-6",
@@ -1476,9 +2251,15 @@
               "descricao": "Modos de trigger normal e single para captura de eventos específicos.",
               "descricaoManual": "Diferenças entre trigger normal e single, quando usar cada modo para diagnóstico de falhas intermitentes.",
               "recursosPrincipais": [
-                { "idRecurso": "TRIGGER_NORMAL_SINGLE", "tipo": "video", "url": "https://www.youtube.com/embed/YsfzMwU9QQw", "titulo": "Curso de Osciloscópio - Trigger Normal e Trigger Single" }
+                {
+                  "idRecurso": "TRIGGER_NORMAL_SINGLE",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/YsfzMwU9QQw",
+                  "titulo": "Curso de Osciloscópio - Trigger Normal e Trigger Single"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfvj"
             },
             {
               "idAula": "M09-1-7",
@@ -1487,9 +2268,15 @@
               "descricao": "Função automática do osciloscópio e sua aplicação em testes automotivos.",
               "descricaoManual": "Como utilizar a função auto do osciloscópio para configurações automáticas e testes específicos em sistemas automotivos.",
               "recursosPrincipais": [
-                { "idRecurso": "FUNCAO_AUTO_TESTES", "tipo": "video", "url": "https://www.youtube.com/embed/kKcUyAmM7EM", "titulo": "Curso de Osciloscópio - Função Auto e Testes Automotivos" }
+                {
+                  "idRecurso": "FUNCAO_AUTO_TESTES",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/kKcUyAmM7EM",
+                  "titulo": "Curso de Osciloscópio - Função Auto e Testes Automotivos"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfvk"
             },
             {
               "idAula": "M09-1-8",
@@ -1498,9 +2285,15 @@
               "descricao": "Uso de cursores para fazer medições precisas no osciloscópio.",
               "descricaoManual": "Como utilizar os cursores do osciloscópio para fazer medições de tempo, frequência e amplitude dos sinais automotivos.",
               "recursosPrincipais": [
-                { "idRecurso": "CURSORES_MEDICOES", "tipo": "video", "url": "https://www.youtube.com/embed/9HBwC-SEbGs", "titulo": "Curso de Osciloscópio - Cursores e Medições" }
+                {
+                  "idRecurso": "CURSORES_MEDICOES",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/9HBwC-SEbGs",
+                  "titulo": "Curso de Osciloscópio - Cursores e Medições"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfvl"
             },
             {
               "idAula": "M09-1-9",
@@ -1509,9 +2302,15 @@
               "descricao": "Conceitos de modulação por largura de pulso (PWM) e sua análise no osciloscópio.",
               "descricaoManual": "Entenda o que é PWM, como funciona e como analisar sinais de modulação por largura de pulso em sistemas automotivos usando o osciloscópio.",
               "recursosPrincipais": [
-                { "idRecurso": "PWM_FUNCIONAMENTO", "tipo": "video", "url": "https://www.youtube.com/embed/1ThLjL_qNuA", "titulo": "Curso de Osciloscópio - PWM - O que é e como funciona?" }
+                {
+                  "idRecurso": "PWM_FUNCIONAMENTO",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/1ThLjL_qNuA",
+                  "titulo": "Curso de Osciloscópio - PWM - O que é e como funciona?"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfvm"
             },
             {
               "idAula": "M09-1-10",
@@ -1520,9 +2319,15 @@
               "descricao": "Análise de sinais do sensor de posição da borboleta (TPS) com osciloscópio.",
               "descricaoManual": "Como diagnosticar o sensor TPS utilizando osciloscópio, análise de formas de onda e identificação de falhas.",
               "recursosPrincipais": [
-                { "idRecurso": "SENSOR_TPS", "tipo": "video", "url": "https://www.youtube.com/embed/qyfgxrGaHzI", "titulo": "Curso de Osciloscópio - Sensor TPS" }
+                {
+                  "idRecurso": "SENSOR_TPS",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/qyfgxrGaHzI",
+                  "titulo": "Curso de Osciloscópio - Sensor TPS"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfvn"
             },
             {
               "idAula": "M09-1-11",
@@ -1531,9 +2336,15 @@
               "descricao": "Teste de compressão relativa do motor utilizando osciloscópio.",
               "descricaoManual": "Como realizar teste de compressão relativa utilizando osciloscópio para diagnóstico de problemas no motor.",
               "recursosPrincipais": [
-                { "idRecurso": "TESTE_CR", "tipo": "video", "url": "https://www.youtube.com/embed/BY6-FuEKaq8", "titulo": "Curso de Osciloscópio - Teste de CR (Compressão Relativa)" }
+                {
+                  "idRecurso": "TESTE_CR",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/BY6-FuEKaq8",
+                  "titulo": "Curso de Osciloscópio - Teste de CR (Compressão Relativa)"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfvo"
             },
             {
               "idAula": "M09-1-12",
@@ -1542,14 +2353,21 @@
               "descricao": "Análise do gráfico padrão do bico injetor utilizando osciloscópio.",
               "descricaoManual": "Como analisar o funcionamento do bico injetor através de gráficos padrão obtidos com osciloscópio, identificando falhas.",
               "recursosPrincipais": [
-                { "idRecurso": "BICO_INJETOR_PADRAO", "tipo": "video", "url": "https://www.youtube.com/embed/psKSLoxGWuo", "titulo": "Curso de Osciloscópio - Bico Injetor (Gráfico Padrão)" }
+                {
+                  "idRecurso": "BICO_INJETOR_PADRAO",
+                  "tipo": "video",
+                  "url": "https://www.youtube.com/embed/psKSLoxGWuo",
+                  "titulo": "Curso de Osciloscópio - Bico Injetor (Gráfico Padrão)"
+                }
               ],
-              "recursosSecundarios": []
+              "recursosSecundarios": [],
+              "idUnico": "aula_1760840618638_m53rpfvp"
             }
-          ]
+          ],
+          "idUnico": "mat_1760840618638_m53rpfvd"
         }
-      ]
+      ],
+      "idUnico": "mod_1760840618638_m53rpfvc"
     }
   ]
 }
-

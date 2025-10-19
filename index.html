@@ -379,20 +379,133 @@ let currentLesson = { modulo: null, materia: null, aula: null };
 const $ = q => document.querySelector(q);
 const $$ = q => [...document.querySelectorAll(q)];
 
+// ------------ Unique ID System ------------
+function findLessonByUniqueId(uniqueId) {
+  for (const modulo of DATA.roadmap?.modulos || []) {
+    for (const materia of modulo.materias || []) {
+      for (const aula of materia.aulas || []) {
+        if (aula.idUnico === uniqueId) return { modulo, materia, aula };
+      }
+    }
+  }
+  return null;
+}
+
+function findLessonByHierarchicalId(hierarchicalId) {
+  for (const modulo of DATA.roadmap?.modulos || []) {
+    for (const materia of modulo.materias || []) {
+      for (const aula of materia.aulas || []) {
+        if (aula.idAula === hierarchicalId) return { modulo, materia, aula };
+      }
+    }
+  }
+  return null;
+}
+
+function findModuleByUniqueId(uniqueId) {
+  for (const modulo of DATA.roadmap?.modulos || []) {
+    if (modulo.idUnico === uniqueId) return modulo;
+  }
+  return null;
+}
+
+function findModuleByHierarchicalId(hierarchicalId) {
+  for (const modulo of DATA.roadmap?.modulos || []) {
+    if (modulo.idModulo === hierarchicalId) return modulo;
+  }
+  return null;
+}
+
+// Migration function to convert from hierarchical IDs to unique IDs
+function migrateToUniqueIds() {
+  console.log('🔄 Iniciando migração para IDs únicos...');
+  
+  // Migrate lesson progress
+  Object.keys(localStorage).forEach(key => {
+    if (key.startsWith('lesson_complete_M') && !key.includes('_aula_')) {
+      const oldId = key.replace('lesson_complete_', '');
+      const lesson = findLessonByHierarchicalId(oldId);
+      
+      if (lesson && lesson.aula.idUnico) {
+        const newKey = `lesson_complete_${lesson.aula.idUnico}`;
+        const value = localStorage.getItem(key);
+        
+        localStorage.setItem(newKey, value);
+        localStorage.removeItem(key);
+        console.log(`Migrated lesson progress: ${oldId} → ${lesson.aula.idUnico}`);
+      }
+    }
+  });
+  
+  // Migrate lesson favorites
+  Object.keys(localStorage).forEach(key => {
+    if (key.startsWith('favorite_lesson_M') && !key.includes('_aula_')) {
+      const oldId = key.replace('favorite_lesson_', '');
+      const lesson = findLessonByHierarchicalId(oldId);
+      
+      if (lesson && lesson.aula.idUnico) {
+        const newKey = `favorite_lesson_${lesson.aula.idUnico}`;
+        const value = localStorage.getItem(key);
+        
+        localStorage.setItem(newKey, value);
+        localStorage.removeItem(key);
+        console.log(`Migrated lesson favorite: ${oldId} → ${lesson.aula.idUnico}`);
+      }
+    }
+  });
+  
+  // Migrate module favorites
+  Object.keys(localStorage).forEach(key => {
+    if (key.startsWith('favorite_module_M') && !key.includes('_mod_')) {
+      const oldId = key.replace('favorite_module_', '');
+      const modulo = findModuleByHierarchicalId(oldId);
+      
+      if (modulo && modulo.idUnico) {
+        const newKey = `favorite_module_${modulo.idUnico}`;
+        const value = localStorage.getItem(key);
+        
+        localStorage.setItem(newKey, value);
+        localStorage.removeItem(key);
+        console.log(`Migrated module favorite: ${oldId} → ${modulo.idUnico}`);
+      }
+    }
+  });
+  
+  console.log('✅ Migração concluída!');
+}
+
 // ------------ Progress Tracking ------------
 function getProgressKey(aulaId) {
-  return `lesson_complete_${aulaId}`;
+  // Try to use unique ID if available, fallback to hierarchical ID for compatibility
+  const lesson = findLessonByHierarchicalId(aulaId);
+  return lesson && lesson.aula.idUnico 
+    ? `lesson_complete_${lesson.aula.idUnico}` 
+    : `lesson_complete_${aulaId}`;
 }
 
 function isLessonComplete(aulaId) {
-  return localStorage.getItem(getProgressKey(aulaId)) === 'true';
+  // Try unique ID first, then fallback to hierarchical ID for backward compatibility
+  const lesson = findLessonByHierarchicalId(aulaId);
+  const uniqueKey = lesson && lesson.aula.idUnico ? `lesson_complete_${lesson.aula.idUnico}` : null;
+  const hierarchicalKey = `lesson_complete_${aulaId}`;
+  
+  if (uniqueKey && localStorage.getItem(uniqueKey) === 'true') {
+    return true;
+  }
+  return localStorage.getItem(hierarchicalKey) === 'true';
 }
 
 function setLessonComplete(aulaId, complete) {
+  const lesson = findLessonByHierarchicalId(aulaId);
+  const uniqueKey = lesson && lesson.aula.idUnico ? lesson.aula.idUnico : aulaId;
+  
   if (complete) {
-    localStorage.setItem(getProgressKey(aulaId), 'true');
+    localStorage.setItem(`lesson_complete_${uniqueKey}`, 'true');
+    // Remove old hierarchical key if it exists
+    localStorage.removeItem(`lesson_complete_${aulaId}`);
   } else {
-    localStorage.removeItem(getProgressKey(aulaId));
+    localStorage.removeItem(`lesson_complete_${uniqueKey}`);
+    localStorage.removeItem(`lesson_complete_${aulaId}`);
   }
   updateModuleProgress();
   renderCoreList(); // Atualiza indicadores visuais
@@ -408,7 +521,12 @@ function getModuleProgress(moduloId) {
   (modulo.materias || []).forEach(mat => {
     (mat.aulas || []).forEach(aula => {
       total++;
-      if (isLessonComplete(aula.idAula)) completed++;
+      // Use unique ID for checking completion
+      const uniqueKey = aula.idUnico ? aula.idUnico : aula.idAula;
+      if (localStorage.getItem(`lesson_complete_${uniqueKey}`) === 'true' || 
+          (aula.idUnico && localStorage.getItem(`lesson_complete_${aula.idAula}`) === 'true')) {
+        completed++;
+      }
     });
   });
   
@@ -435,32 +553,60 @@ function toggleLessonComplete() {
 
 // ------------ Favorites System ------------
 function getFavoriteModuleKey(moduloId) {
-  return `favorite_module_${moduloId}`;
+  const modulo = findModuleByHierarchicalId(moduloId);
+  const uniqueId = modulo && modulo.idUnico ? modulo.idUnico : moduloId;
+  return `favorite_module_${uniqueId}`;
 }
 
 function getFavoriteLessonKey(aulaId) {
-  return `favorite_lesson_${aulaId}`;
+  const lesson = findLessonByHierarchicalId(aulaId);
+  const uniqueId = lesson && lesson.aula.idUnico ? lesson.aula.idUnico : aulaId;
+  return `favorite_lesson_${uniqueId}`;
 }
 
 function isModuleFavorite(moduloId) {
-  return localStorage.getItem(getFavoriteModuleKey(moduloId)) === 'true';
+  const modulo = findModuleByHierarchicalId(moduloId);
+  
+  // Try unique ID first
+  if (modulo && modulo.idUnico) {
+    const uniqueKey = `favorite_module_${modulo.idUnico}`;
+    if (localStorage.getItem(uniqueKey) === 'true') return true;
+  }
+  
+  // Fallback to hierarchical ID for backward compatibility
+  const hierarchicalKey = `favorite_module_${moduloId}`;
+  return localStorage.getItem(hierarchicalKey) === 'true';
 }
 
 function isLessonFavorite(aulaId) {
-  return localStorage.getItem(getFavoriteLessonKey(aulaId)) === 'true';
+  const lesson = findLessonByHierarchicalId(aulaId);
+  
+  // Try unique ID first
+  if (lesson && lesson.aula.idUnico) {
+    const uniqueKey = `favorite_lesson_${lesson.aula.idUnico}`;
+    if (localStorage.getItem(uniqueKey) === 'true') return true;
+  }
+  
+  // Fallback to hierarchical ID for backward compatibility
+  const hierarchicalKey = `favorite_lesson_${aulaId}`;
+  return localStorage.getItem(hierarchicalKey) === 'true';
 }
 
 function toggleModuleFavorite(moduloId, event) {
   if (event) {
     event.stopPropagation(); // Não ativa o click do módulo
   }
-  const key = getFavoriteModuleKey(moduloId);
+  
+  const modulo = findModuleByHierarchicalId(moduloId);
+  const uniqueId = modulo && modulo.idUnico ? modulo.idUnico : moduloId;
   const isFav = isModuleFavorite(moduloId);
   
   if (isFav) {
-    localStorage.removeItem(key);
+    localStorage.removeItem(`favorite_module_${uniqueId}`);
+    localStorage.removeItem(`favorite_module_${moduloId}`); // Remove old key too
   } else {
-    localStorage.setItem(key, 'true');
+    localStorage.setItem(`favorite_module_${uniqueId}`, 'true');
+    localStorage.removeItem(`favorite_module_${moduloId}`); // Remove old hierarchical key
   }
   
   renderCoreList(); // Atualiza visual
@@ -470,13 +616,17 @@ function toggleLessonFavorite(aulaId, event) {
   if (event) {
     event.stopPropagation(); // Não ativa o click da aula
   }
-  const key = getFavoriteLessonKey(aulaId);
+  
+  const lesson = findLessonByHierarchicalId(aulaId);
+  const uniqueId = lesson && lesson.aula.idUnico ? lesson.aula.idUnico : aulaId;
   const isFav = isLessonFavorite(aulaId);
   
   if (isFav) {
-    localStorage.removeItem(key);
+    localStorage.removeItem(`favorite_lesson_${uniqueId}`);
+    localStorage.removeItem(`favorite_lesson_${aulaId}`); // Remove old key too
   } else {
-    localStorage.setItem(key, 'true');
+    localStorage.setItem(`favorite_lesson_${uniqueId}`, 'true');
+    localStorage.removeItem(`favorite_lesson_${aulaId}`); // Remove old hierarchical key
   }
   
   if (currentLesson.modulo) {
@@ -855,6 +1005,9 @@ function loadLessonMobile(modulo, materia, aula) {
     if (!DATA.roadmap?.modulos || !DATA.careers?.carreiras) {
       throw new Error('Dados JSON inválidos ou incompletos');
     }
+    
+    // Migrate to unique IDs if needed
+    migrateToUniqueIds();
     
     // Renderiza interface
     renderCareerPicker();
